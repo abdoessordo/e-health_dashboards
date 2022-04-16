@@ -481,7 +481,8 @@ main .recent-orders a {
     box-shadow: none;
 }
 
-.rigth .recent-updates .updates .update {
+.rigth .recent-updates .updates .update,
+.rigth .sales-analytics .item {
     display: grid;
     grid-template-columns: 2.6rem auto;
     gap: 1rem;
@@ -502,8 +503,8 @@ main .recent-orders a {
 }
 
 .rigth .sales-analytics .item {
+    grid-template-columns: 2.6rem auto 1.5rem 1.5rem;
     background: var(--color-white);
-    display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 0.7rem;
@@ -517,48 +518,10 @@ main .recent-orders a {
     box-shadow: none;
 }
 
-.rigth .sales-analytics .item .rigth {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin: 0;
-    width: 100%;
+.rigth .sales-analytics .item>div span{
+    cursor: pointer;
 }
 
-.rigth .sales-analytics .item .icon {
-    padding: 0.6rem;
-    color: var(--color-white);
-    border-radius: 50%;
-    background: var(--color-primary);
-    display: flex;
-}
-
-.rigth .sales-analytics .item.offline .icon {
-    background: var(--color-danger);
-}
-
-.rigth .sales-analytics .item.customers .icon {
-    background: var(--color-success);
-}
-
-.rigth .sales-analytics .add-product {
-    background: transparent;
-    border: 2px dashed var(--color-primary);
-    color: var(--color-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.rigth .sales-analytics .add-product div {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
-
-.rigth .sales-analytics .add-product div h3 {
-    font-weight: 600;
-}
 
 
 /* ====================================================
@@ -599,9 +562,6 @@ main .recent-orders a {
         left: 50%;
         transform: translate(-50%, 40%);
         margin-top: 2rem 0 0 8.8rem;
-    }
-    .rigth .sales-analytics>div:last-child{
-        display: none;
     }
 }
 
@@ -666,6 +626,10 @@ main .recent-orders a {
     main .recent-orders table {
         width: 100%;
         margin: 0;
+    }
+    main .recent-orders table thead tr>th:last-child,
+    main .recent-orders table tbody tr>td:last-child {
+        display: none;
     }
     .rigth {
         width: 94%;
