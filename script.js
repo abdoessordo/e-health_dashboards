@@ -19,3 +19,25 @@ themeToggler.addEventListener('click', () => {
     themeToggler.querySelector("span:first-child").classList.toggle('active')
     themeToggler.querySelector("span:last-child").classList.toggle('active')
 })
+
+// drop down menu
+const dropMenu = (btn) => {
+    btn.querySelector("span").classList.toggle("flip_180")
+
+    let dropdown = document.querySelector("ul.drop-down-content")
+    dropdown.classList.toggle("show-drop-down")
+
+    
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.role')) {
+        try {
+            console.log('test');
+            // document.querySelector(".drop-down-content").style.display = 'none'
+        } catch (error) {
+
+        }
+    }
+}

@@ -29,21 +29,21 @@
             </div>
 
             <div class="sidebar">
-                <a href="">
+                <a href="" class="active">
                     <span class="material-icons-sharp">dashboard</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="" class="active">
+                <a href="" >
                     <span class="material-icons-sharp"> person_outline</span>
-                    <h3>Customers</h3>
+                    <h3>My Patients</h3>
                 </a>
                 <a href="">
                     <span class="material-icons-sharp">receipt_long</span>
-                    <h3>Orders</h3>
+                    <h3>Consultations</h3>
                 </a>
                 <a href="">
-                    <span class="material-icons-sharp">insights</span>
-                    <h3>Analytics</h3>
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Appointments</h3>
                 </a>
                 <a href="">
                     <span class="material-icons-sharp">mail_outline</span>
@@ -51,20 +51,12 @@
                     <span class="message-count">26</span>
                 </a>
                 <a href="">
-                    <span class="material-icons-sharp">inventory</span>
-                    <h3>Products</h3>
-                </a>
-                <a href="">
                     <span class="material-icons-sharp">report_gmailerrorred</span>
-                    <h3>Reports</h3>
+                    <h3>Reclamation</h3>
                 </a>
                 <a href="">
                     <span class="material-icons-sharp">manage_accounts</span>
                     <h3>Settings</h3>
-                </a>
-                <a href="">
-                    <span class="material-icons-sharp">add</span>
-                    <h3>Add Products</h3>
                 </a>
                 <a href="">
                     <span class="material-icons-sharp">logout</span>
@@ -77,68 +69,62 @@
             <h1>Dashboard</h1>
 
             <div class="insights">
-                <div class="sales">
+                <div class="card">
                     <span class="material-icons-sharp">people_alt</span>
                     <div class="middle">
-                        <div class="left">
-                            <h3>Total Patients</h3>
-                            <h1>120</h1>
-                        </div>
+
+                        <h3>Total Patients</h3>
+                        <h1>120</h1>
+
                     </div>
                     <small class="text-muted">
                         Last Week
                     </small>
                 </div>
-                <!--------------- END OF SALES ------------>
+                <!--------------- END OF CARD 1 ------------>
 
-                <div class="expenses">
+                <div class="card">
                     <span class="material-icons-sharp">event</span>
                     <div class="middle">
-                        <div class="left">
-                            <h3>Appointments</h3>
-                            <h1>56</h1>
-                        </div>
+                        <h3>Appointments</h3>
+                        <h1>56</h1>
                     </div>
                     <small class="text-muted">
                         Last Week
                     </small>
                 </div>
-                <!--------------- END OF EXPENSES ------------>
+                <!--------------- END OF CARD 2 ------------>
 
-                <div class="income">
+                <div class="card">
                     <span class="material-icons-sharp">phone_in_talk</span>
                     <div class="middle">
-                        <div class="left">
-                            <h3>Phone Calls</h3>
-                            <h1>356</h1>
-                        </div>
+                        <h3>Phone Calls</h3>
+                        <h1>356</h1>
                     </div>
                     <small class="text-muted">
                         Last Week
                     </small>
                 </div>
-                <!--------------- END OF INCOME ------------>
-                <div class="income">
+                <!--------------- END OF CARD 3 ------------>
+                <div class="card">
                     <span class="material-icons-sharp">medication</span>
                     <div class="middle">
-                        <div class="left">
-                            <h3>Consultations</h3>
-                            <h1>84</h1>
-                        </div>
+                        <h3>Consultations</h3>
+                        <h1>84</h1>
                     </div>
                     <small class="text-muted">
                         Last Week
                     </small>
                 </div>
-                <!--------------- END OF INCOME ------------>
-                <div class="income">
+                <!--------------- END OF CARD 4 ------------>
+                <div class="card">
                     <span class="material-icons-sharp">add </span>
                 </div>
-                <!--------------- END OF INCOME ------------>
+                <!--------------- END OF CARD 5 ------------>
             </div>
             <!--------------- END OF INSIGHTS ------------>
 
-            <div class="recent-orders">
+            <div class="bottom">
                 <h2>My appointments</h2>
                 <table>
                     <thead>
@@ -213,11 +199,6 @@
                                 <span class="material-icons-sharp"> done</span>
                             </td>
                         </tr>
-
-
-                        
-
-
                     </tbody>
                 </table>
                 <a href="#">Show All</a>
@@ -236,40 +217,51 @@
                 <div class="profile">
                     <div class="info">
                         <p>Hey, <b>Abdellah</b></p>
-                        <small class="text-muted">Admin</small>
+                        <small class="role" onclick="dropMenu(this)">
+                            <small class="text-muted">Doctor</small>
+                            <span class="material-icons-sharp">expand_more</span>
+                        </small>
+                        <ul class="drop-down-content">
+                                <h3><li><a href="./patient.html">Patient</a></li></h3>
+                                <h3><li><a href="./doctor.html">Docteur</a></li></h3>
+                                <h3><li><a href="./pharmacien.html">Pharmacien</a></li></h3>
+                        </ul>
+                        
                     </div>
                     <div class="profile-photo">
                         <img src="./images/profile-1.jpg" alt="">
                     </div>
                 </div>
             </div>
+            <!--------------- END OF TOP ------------>
 
-            <div class="recent-updates">
+
+            <div class="section-1">
                 <h2>Last Patients</h2>
-                <div class="updates">
-                    <div class="update">
+                <div class="rows">
+                    <div class="row">
                         <div class="profile-photo">
                             <img src="./images/profile-2.jpg" alt="">
                         </div>
-                        <div class="messages">
+                        <div class="description">
                             <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
                         </div>
                     </div>
 
-                    <div class="update">
+                    <div class="row">
                         <div class="profile-photo">
                             <img src="./images/profile-3.jpg" alt="">
                         </div>
-                        <div class="messages">
+                        <div class="description">
                             <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
                         </div>
                     </div>
 
-                    <div class="update">
+                    <div class="row">
                         <div class="profile-photo">
                             <img src="./images/profile-4.jpg" alt="">
                         </div>
-                        <div class="messages">
+                        <div class="description">
                             <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
                         </div>
                     </div>
@@ -277,15 +269,15 @@
             </div>
             <!--------------- END OF RECENT UPDATES ------------>
 
-            <div class="sales-analytics">
+            <div class="section-2">
                 <h2>Appointments Requests</h2>
-                
+
 
                 <div class="item">
                     <div class="profile-photo">
                         <img src="./images/profile-4.jpg" alt="">
                     </div>
-                    <div class="messages">
+                    <div class="description">
                         <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
                     </div>
                     <div class="success">
@@ -300,7 +292,7 @@
                     <div class="profile-photo">
                         <img src="./images/profile-2.jpg" alt="">
                     </div>
-                    <div class="messages">
+                    <div class="description">
                         <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
                     </div>
                     <div class="success">
@@ -315,7 +307,7 @@
                     <div class="profile-photo">
                         <img src="./images/profile-3.jpg" alt="">
                     </div>
-                    <div class="messages">
+                    <div class="description">
                         <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
                     </div>
                     <div class="success">
@@ -326,7 +318,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </div>
