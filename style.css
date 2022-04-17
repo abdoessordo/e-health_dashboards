@@ -558,17 +558,20 @@ main .bottom a {
 ======================================================= */
 
 .rigth .section-2,
-.rigth .section-4 {
+.rigth .section-4,
+.rigth .section-5 {
     margin-top: 2rem;
 }
 
 .rigth .section-2 h2,
-.rigth .section-4 h2 {
+.rigth .section-4 h2,
+.rigth .section-5 h2 {
     margin-bottom: 0.8rem;
 }
 
 .rigth .section-2 .item,
-.rigth .section-4 .item {
+.rigth .section-4 .item,
+.rigth .section-5 .item {
     display: grid;
     grid-template-columns: 2.6rem auto 1.5rem 1.5rem;
     background: var(--color-white);
@@ -585,21 +588,23 @@ main .bottom a {
     grid-template-columns: 2.6rem auto 2rem;
 }
 
+.rigth .section-5 .item{
+    grid-template-columns: 2.6rem auto 3rem;
+}
+
 .rigth .section-2 .item:hover,
-.rigth .section-4 .item:hover {
+.rigth .section-4 .item:hover,
+.rigth .section-5 .item:hover{
     box-shadow: none;
 }
 
 .rigth .section-2 .item>div span,
-.rigth .section-4 .item>div span{
+.rigth .section-4 .item>div span,
+.rigth .section-5 .item>div span{
     cursor: pointer;
 }
 
-.rigth .section-4>div:last-child{
-    background-color: transparent;
-}
-
-.rigth .add-new{
+.rigth .section-4 .add-new{
     background-color: transparent;
     border: 2px dashed  var(--color-primary);
     color: var(--color-primary);
