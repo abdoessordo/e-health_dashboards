@@ -470,7 +470,7 @@ main .bottom a {
 .drop-down-content {
     opacity: 0%;
     list-style: none;
-    right: 7rem;
+    right: 5rem;
     position: absolute;
     min-width: 10rem;
     z-index: 10;
@@ -606,6 +606,9 @@ main .bottom a {
         transform: translate(-50%, 40%);
         margin-top: 2rem 0 0 8.8rem;
     }
+    .drop-down-content{
+        right: 1rem;
+    }
 }
 
 
@@ -694,9 +697,12 @@ main .bottom a {
     .rigth .top .theme-toggler {
         width: 4.4rem;
         position: absolute;
-        left: 66%;
+        left: 62%;
     }
-    .rigth .profile .info {
+    .rigth .top .profile{
+        align-items: center;
+    }
+    .rigth .top .profile .info p {
         display: none;
     }
     .rigth .top button {
@@ -709,5 +715,8 @@ main .bottom a {
     }
     .rigth .top button span {
         font-size: 2rem;
+    }
+    .drop-down-content{
+        top:4rem
     }
 }

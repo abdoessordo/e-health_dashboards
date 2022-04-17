@@ -29,15 +29,3 @@ const dropMenu = (btn) => {
 
     
 }
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.role')) {
-        try {
-            console.log('test');
-            // document.querySelector(".drop-down-content").style.display = 'none'
-        } catch (error) {
-
-        }
-    }
-}
