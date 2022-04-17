@@ -697,7 +697,7 @@ main .bottom a {
     .rigth .top .theme-toggler {
         width: 4.4rem;
         position: absolute;
-        left: 62%;
+        left: 4rem;
     }
     .rigth .top .profile{
         align-items: center;
