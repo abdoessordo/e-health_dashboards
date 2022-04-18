@@ -68,10 +68,10 @@
         <main>
             <h1>Settings & Privacy</h1>
 
-            <div class="insights">
+            <div class="insights settings">
                 <div>
                     <h2>General Account Settings</h2>
-                    <div class="card settings">
+                    <div class="card">
                         <div class="row">
                             <div class="profile-photo">
                                 <img src="./images/profile-1.jpg" alt="">
@@ -111,6 +111,12 @@
                                 <input class="primary" type="number" value="0672407504" disabled>
                                 <h4 class="text-muted">Edit</h4>
                             </div>
+                            
+                            <div class="form-row">
+                                <label for="">CIN</label>
+                                <input class="primary" type="text" value="K570940" disabled>
+                                <h4 class="text-muted">Edit</h4>
+                            </div>
 
                             <div class="form-row">
                                 <label for="">Adress</label>
@@ -124,38 +130,69 @@
                                 <h4 class="text-muted">Edit</h4>
                             </div>
 
-                            <div class="form-row">
-                                <label for="">Zip Code</label>
-                                <input class="primary" type="number" value="90000" disabled>
-                                <h4 class="text-muted">Edit</h4>
-                            </div>
                         </form>
-    
                     </div>
                 </div>
                 <!--------------- END OF CARD 1 ------------>
-                        <div class="section-1">
-                            <h2>Privacy Settings</h2>
-                            <div class="rows">
-                                <div class="row">
-                                    <div class="profile-photo">
-                                        <img src="./images/profile-2.jpg" alt="">
-                                    </div>
-                                    <div class="description">
-                                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
-                                    </div>
-                                </div>
+                <div>
 
-                                <div class="row">
-                                    <div class="profile-photo">
-                                        <img src="./images/profile-3.jpg" alt="">
-                                    </div>
-                                    <div class="description">
-                                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
-                                    </div>
+                    <div class="section-1">
+                        <h2>Privacy Settings</h2>
+                        <div class="rows privacy-settings">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Private Account</h3>
+                                    <small class="text-muted">
+                                        When your account is private, no one can view your account informations, past
+                                        consultations, drugs used and insurances...
+                                    </small>
                                 </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="section-1">
+                        <h2>Insurance Settings</h2>
+                        <div class="rows privacy-settings">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Activate Insurance</h3>
+                                    <small class="text-muted">
+                                        You will be able to create insurances from past consultations and prescriptions
+                                    </small>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <form action="">
+                                <div class="form-row">
+                                    <label for="">N&deg Affiliation</label>
+                                    <input class="primary" type="text" value="I863IO" disabled>
+                                    <h4 class="text-muted">Edit</h4>
+                                </div>
+
+                                <div class="form-row">
+                                    <label for="">N&deg Immatriculation</label>
+                                    <input class="primary" type="text" value="606077" disabled>
+                                    <h4 class="text-muted">Edit</h4>
+                                </div>
+
+                                <div class="form-row">
+                                    <label for="">Date d'adhesion</label>
+                                    <input class="primary" type="date" value="2022-01-01"
+                                        disabled>
+                                    <h4 class="text-muted">Edit</h4>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
 
 
@@ -166,7 +203,7 @@
             <!--------------- END OF INSIGHTS ------------>
 
             <div class="bottom">
-                <h2>Used Drugs</h2>
+                <!-- <h2>Used Drugs</h2>
                 <table>
                     <thead>
                         <tr>
@@ -212,7 +249,7 @@
                         </tr>
 
                     </tbody>
-                </table>
+                </table> -->
             </div>
         </main>
         <!--------------- END OF MAIN ------------>

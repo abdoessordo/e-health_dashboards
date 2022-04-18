@@ -410,8 +410,7 @@ main .insights.private>div span.locked{
     font-size: 5rem;
 }
 
-main .insights>div span {
-    background: var(--color-primary);
+main .insights.other>div span {
     padding: 0.5rem;
     border-radius: 50%;
     color: var(--color-white);
@@ -419,14 +418,6 @@ main .insights>div span {
 }
 
 
-
-main .insights>div:nth-child(2) span {
-    background: var(--color-danger);
-}
-
-main .insights>div:nth-child(3) span {
-    background: var(--color-success);
-}
 
 
 main .insights h3 {
@@ -440,38 +431,138 @@ main .insights small {
     margin-top: 1.3rem;
 }
 
-main .insights>div .settings .row{
-    display: grid;
-    grid-template-columns: 7rem auto;
-    margin-bottom: 2rem;
+main .insights.settings{
+    grid-template-columns: auto 40rem;
 }
 
-main .insights>div .settings .row .profile-photo{
+main .insights.settings>div  .row{
+    display: grid;
+    grid-template-columns: 7rem auto;
+}
+
+main .insights.settings>div .row .profile-photo{
     width: 5rem;
     height: 5rem;
 }
 
-main .insights>div .settings .row .description{
+main .insights.settings>div .row .description{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-main .insights>div .settings .row .description h4{
+main .insights.settings>div .row .description h4{
     cursor: pointer;
 }
 
+main .insights.settings>div form{
+    margin-top: 2rem;
 
-main .insights>div .settings form .form-row{
+}
+
+main .insights.settings>div form .form-row{
     display: grid;
-    grid-template-columns: 15rem auto 5rem;
+    grid-template-columns: 12rem auto 5rem;
     cursor: pointer;
     user-select: none;
     margin-bottom: 1rem;
 }
-main .insights>div .settings form .form-row:last-child{
+
+main .insights.settings>div form .form-row h4{
+text-align: center;
+}
+main .insights.settings>div form .form-row:last-child{
     margin-bottom: 0;
 }
+
+main .insights.settings .section-1{
+    margin-bottom: 3rem;
+}
+
+main .insights.settings .section-1 .privacy-settings .row{
+    display: grid;
+    grid-template-columns: auto 5rem;
+}
+
+main .insights.settings .section-1 .privacy-settings .row .description h3,
+main .insights.settings .section-1 .privacy-settings .row .description .text-muted{
+    margin: 0;
+}
+
+main .insights.settings .section-1 .privacy-settings .row{
+    margin-bottom: 0;
+}
+main .insights.settings .section-1 .privacy-settings .row>label{
+    margin: auto 0;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+
+/* switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* end switch  */
+
+
 
 
 /* ====================================================
@@ -747,9 +838,10 @@ main table tbody tr:last-child td {
         margin-top: 1.8rem;
     }
 
-    main .insights {
+    main .insights,
+    main .insights.settings,
+    main .insights.settings >div:nth-child(2) {
         grid-template-columns: repeat(1, 1fr);
-        /* gap: 0.8rem; */
     }
 
     main .insights >div:nth-child(2) {
@@ -757,6 +849,9 @@ main table tbody tr:last-child td {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.8rem;
     }
+
+    main .insights.settings>div form .form-row {
+    grid-template-columns: 10rem auto 5rem;
 
     main .bottom {
         width: 94%;
