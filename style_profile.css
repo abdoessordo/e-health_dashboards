@@ -852,6 +852,7 @@ main table tbody tr:last-child td {
 
     main .insights.settings>div form .form-row {
     grid-template-columns: 10rem auto 5rem;
+    }
 
     main .bottom {
         width: 94%;
