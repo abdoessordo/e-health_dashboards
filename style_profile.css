@@ -56,7 +56,7 @@ html {
     font-size: 14px;
 }
 
-body {
+body{
     width: 100vw;
     height: 100vh;
     font-family: poppins, sans-serif;
@@ -67,6 +67,15 @@ body {
     color: var(--color-dark);
 }
 
+form, form input{
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
+    background: none;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    font-weight: 500;
+}
 .container {
     display: grid;
     width: 96%;
@@ -93,7 +102,7 @@ h2 {
     font-size: 1.4rem;
 }
 
-h3 {
+h3{
     font-size: 0.87rem;
 }
 
@@ -107,6 +116,10 @@ h5 {
 
 small {
     font-size: 0.75rem;
+}
+
+label{
+    font-weight: 700;
 }
 
 .big-profile-photo,
@@ -265,6 +278,8 @@ main .insights {
     display: grid;
     grid-template-columns: auto 25rem;
     gap: 1.6rem;
+    margin-top: 2rem;
+
 }
 
 main .private{
@@ -284,39 +299,39 @@ main .insights .card {
     transition: all 300ms ease;
 }
 
-main .insights>div:first-child {
+main .insights>div.profile {
     display: grid;
     grid-template-columns: auto 50%;
 }
 
 
 
-main .insights>div:first-child .left {
+main .insights>div.profile .left {
     border-right: 1px solid var(--color-light);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main .insights>div:first-child .left h2{
+main .insights>div.profile .left h2{
     margin: 1rem 0 0 0;
 }
 
-main .insights>div:first-child .left .text-muted{
+main .insights>div.profile .left .text-muted{
     margin-top: 0;
     font-weight: 400;
 }
 
-main .insights>div:first-child .left .appoitements{
+main .insights>div.profile .left .appoitements{
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-main .insights>div:first-child .left .appoitements .past{
+main .insights>div.profile .left .appoitements .past{
     border-right: 1px solid var(--color-light);
 }
 
-main .insights>div:first-child .left #send-msg-btn{
+main .insights>div.profile .left #send-msg-btn{
     background-color: var(--color-primary);
     color: var(--color-white);
     margin-top: 2rem;
@@ -326,30 +341,42 @@ main .insights>div:first-child .left #send-msg-btn{
     border-radius: var(--card-border-radius);
 }
 
-main .insights>div:first-child .left #send-msg-btn h3{
+main .insights>div.profile .left #send-msg-btn h3{
     margin: 0;
 }
 
-main .insights>div:first-child .rigth{
+main .insights>div.profile .rigth{
     margin-top: 0;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
 }
-main .insights>div:first-child .rigth {
+
+#edit span{
+    background: unset;
+    padding: unset;
+    border-radius: unset;
+    color: var(--color-primary);
+    font-size: 2rem;
+    float: right;
+}
+main .insights>div.profile .rigth .info {
     padding-left: 1.8rem;
+    margin-top: 1.8rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 4rem ;
 }
 
-main .insights>div:first-child .rigth .info-elem{
+main .insights>div.profile .rigth .info .info-elem{
     border-bottom: 1px solid var(--color-light);
 }
 
-main .insights>div:first-child .rigth .info-elem .user-info{
+main .insights>div.profile .rigth .info .info-elem .user-info{
     font-weight: 400;
 }
 
-main .insights>div:first-child .rigth .info-elem:last-child,
-main .insights>div:first-child .rigth .info-elem:nth-child(7){
+main .insights>div.profile .rigth .info .info-elem:last-child,
+main .insights>div.profile .rigth .info .info-elem:nth-child(7){
     border: none;
 }
 
@@ -359,17 +386,17 @@ main .insights>div:hover {
     box-shadow: none;
 }
 
-main .insights.private>div:first-child{
+main .insights.private>div.profile{
     display: grid;
     grid-template-columns: auto 80%;
     gap: 1rem;
 }
 
-main .insights.private>div:first-child>span:first-child{
+main .insights.private>div.profile>span:first-child{
     text-align: center;
 }
 
-main .insights.private>div:first-child>div{
+main .insights.private>div.profile>div{
     margin-right: 1rem;
     text-align: justify;
 }
@@ -411,6 +438,39 @@ main .insights h3 {
 main .insights small {
     display: block;
     margin-top: 1.3rem;
+}
+
+main .insights>div .settings .row{
+    display: grid;
+    grid-template-columns: 7rem auto;
+    margin-bottom: 2rem;
+}
+
+main .insights>div .settings .row .profile-photo{
+    width: 5rem;
+    height: 5rem;
+}
+
+main .insights>div .settings .row .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .insights>div .settings .row .description h4{
+    cursor: pointer;
+}
+
+
+main .insights>div .settings form .form-row{
+    display: grid;
+    grid-template-columns: 15rem auto 5rem;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 1rem;
+}
+main .insights>div .settings form .form-row:last-child{
+    margin-bottom: 0;
 }
 
 
@@ -770,16 +830,16 @@ main table tbody tr:last-child td {
         padding: 0 1rem;
     }
 
-    main .insights>div:first-child {
+    main .insights>div.profile {
         display: block;
     }
 
-    main .insights>div:first-child .left {
+    main .insights>div.profile .left {
         border-right: 0;
         border-bottom: 1px solid var(--color-light);
     }
 
-    main .insights>div:first-child .rigth{
+    main .insights>div.profile .rigth{
         margin: 0 auto;
         padding: 0;
     }
