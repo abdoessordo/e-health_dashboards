@@ -67,7 +67,7 @@ body{
     color: var(--color-dark);
 }
 
-form, form input{
+form, form input, form textarea, form button{
     font-family: poppins, sans-serif;
     font-size: 1rem;
     background: none;
@@ -76,6 +76,12 @@ form, form input{
     color: var(--color-dark);
     font-weight: 500;
 }
+
+form textarea{
+    resize: none;
+    overflow: hidden;
+}
+
 .container {
     display: grid;
     width: 96%;
@@ -286,11 +292,11 @@ main .private{
     grid-template-columns: auto ;
 }
 
-main .insights .card .middle{
+main .card .middle{
     text-align: center;
 }
 
-main .insights .card {
+main .card {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -473,6 +479,64 @@ text-align: center;
 }
 main .insights.settings>div form .form-row:last-child{
     margin-bottom: 0;
+}
+
+
+
+main form.add-med-form .form-row{
+    display: grid;
+    grid-template-columns: 12rem 10rem 30rem 5rem;
+    gap: 5rem;
+    user-select: none;
+    margin-bottom: 3rem;
+}
+
+main form.add-med-form .form-row>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-light);
+}
+
+main form.add-med-form .form-row>div *:last-child{
+    padding-top:  2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+main form.add-med-form .form-row h4{
+text-align: center;
+}
+main form.add-med-form .form-row:last-child{
+    margin-bottom: 0;
+}
+main form.add-med-form .form-row div:last-child{
+    justify-content: center;
+    color: red;
+    border: none;
+}
+
+main form.add-med-form .form-row div:last-child span{
+    cursor: pointer;
+}
+
+main form.add-med-form .add-more-btn{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding:  calc(0.5 * var(--card-padding));
+    margin-top: 2rem;
+    border: 2px dashed var(--color-primary);
+    border-radius: var(--border-radius-3);    
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+main form.add-med-form .add-more-btn:hover{
+    padding: calc(0.5 * var(--card-padding)) calc(2 * var(--card-padding));
+
 }
 
 main .insights.settings .section-1{

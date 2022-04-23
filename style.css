@@ -255,6 +255,20 @@ main {
     margin: 1.4rem;
 }
 
+/* main .add-med-from .row{
+    display: grid;
+    grid-template-columns: 20rem 10rem 20rem 5rem;
+    gap: 7rem;
+} */
+/* 
+main .add-med-from .row input
+main .add-med-from .row textarea{
+    width: 100%;
+} */
+
+
+
+
 main .insights,
 main .insights.dashboard {
     display: grid;
