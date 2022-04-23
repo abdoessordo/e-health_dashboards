@@ -481,46 +481,54 @@ main .insights.settings>div form .form-row:last-child{
     margin-bottom: 0;
 }
 
-
-
-main form.add-med-form .form-row{
+main form.add-form .form-row{
     display: grid;
-    grid-template-columns: 12rem 10rem 30rem 5rem;
     gap: 5rem;
     user-select: none;
     margin-bottom: 3rem;
 }
 
-main form.add-med-form .form-row>div{
+main form#form-trait .form-row{
+    grid-template-columns: 12rem auto 5rem;
+}
+
+main form#form-med .form-row{
+    grid-template-columns: 12rem 10rem auto 5rem;
+}
+
+main form.add-form .form-row>div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-bottom: 1px solid var(--color-light);
 }
 
-main form.add-med-form .form-row>div *:last-child{
+main form.add-form .form-row>div *:last-child{
     padding-top:  2rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
 }
 
-main form.add-med-form .form-row h4{
+main form.add-form .form-row h4{
 text-align: center;
 }
-main form.add-med-form .form-row:last-child{
+main form.add-form .form-row:last-child{
     margin-bottom: 0;
 }
-main form.add-med-form .form-row div:last-child{
+main form.add-form .form-row div:last-child{
     justify-content: center;
     color: red;
     border: none;
 }
 
-main form.add-med-form .form-row div:last-child span{
+main form.add-form .form-row div:last-child span{
     cursor: pointer;
 }
 
-main form.add-med-form .add-more-btn{
+
+
+main form.add-form .add-more-btn,
+main form.add-form button .submit-btn{
     display: flex;
     align-items: center;
     width: fit-content;
@@ -534,9 +542,21 @@ main form.add-med-form .add-more-btn{
     cursor: pointer;
 }
 
-main form.add-med-form .add-more-btn:hover{
-    padding: calc(0.5 * var(--card-padding)) calc(2 * var(--card-padding));
 
+main form.add-form button{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+main form.add-form button .submit-btn{
+    border: 2px solid var(--color-primary);
+    margin: 0 auto;
+
+}
+
+main form.add-form .add-more-btn:hover,
+main form.add-form .submit-btn:hover{
+    padding: calc(0.5 * var(--card-padding)) calc(2 * var(--card-padding));
 }
 
 main .insights.settings .section-1{
@@ -927,6 +947,20 @@ main table tbody tr:last-child td {
 
     .drop-down-content {
         right: 1rem;
+    }
+
+    main #form-holder-med.card{
+        width: 70%;
+    }
+
+    main form#form-med .form-row{
+        gap: 1rem;
+        grid-template-columns:  10rem 8rem auto 3rem;
+    } 
+
+    main #form-holder-trait.card,
+    main #form-holder-med.card{
+        position: absolute;
     }
 }
 

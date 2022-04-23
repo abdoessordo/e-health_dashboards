@@ -62,6 +62,22 @@ const create_row = (type, row_num) => {
                 <span id="delete-row-${row_num}" onclick=delete_row(this.id) class="material-icons-sharp">delete</span>
             </div>
         `
+    } else if (type === 'trait') {
+           row.innerHTML = `
+            <div>
+                <label for="">Traitement</label>
+                <input class="primary" type="text" placeholder="Enter Traitement">
+            </div>
+
+            <div>
+                <label for="">Traitement Description</label>
+                <textarea class="primary" rows="1" placeholder="Enter Descpritption"></textarea>
+            </div>
+
+            <div>
+                <span id="delete-row-${row_num}" onclick=delete_row(this.id) class="material-icons-sharp">delete</span>
+            </div>
+        `
     }
     return row
 }
@@ -77,6 +93,6 @@ const delete_row = (id) => {
 
 const add_row = (type) => {
     let new_row = create_row(type, i)
-    let form_holder = document.querySelector(`.add-${type}-form>.rows`);
+    let form_holder = document.querySelector(`#form-${type}>.rows`);
     form_holder.appendChild(new_row)
 }

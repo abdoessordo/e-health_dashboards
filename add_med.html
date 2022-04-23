@@ -19,10 +19,10 @@
     <div class="container">
         <aside>
             <div class="top">
-                <div class="logo">
+                <a class="logo" href="./doctor.html">
                     <img src="./images/logo.png" alt="">
                     <h2>e-<span class="danger">HEALTH</span></h2>
-                </div>
+                </a>
                 <div class="close" id="close-btn">
                     <span class="material-icons-sharp"> close</span>
                 </div>
@@ -66,10 +66,10 @@
         </aside>
         <!-- END OF ASIDE -->
         <main>
-            <h1>Add Medicaments</h1>
+            <h1>Add Drugs</h1>
 
-            <div class="card">
-                <form class="add-med-form" action="">
+            <div class="card" id="form-holder-med">
+                <form class="add-form" id="form-med" action="#">
                     <div class="rows">
 
                         <div class="form-row" id="row-1">
@@ -100,12 +100,11 @@
                         <h3>Add More</h3>
                     </div>
 
-                    <!-- <button type="submit">
-                        <div class="add-more-btn" onclick="add_row('med')">
-                            <span class="material-icons-sharp">add</span>
-                            <h3>Add More</h3>
+                    <button type="submit">
+                        <div class="submit-btn">
+                            <h3>Submit</h3>
                         </div>
-                    </button> -->
+                    </button>
                 </form>
             </div>
 
