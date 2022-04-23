@@ -270,7 +270,8 @@ main .add-med-from .row textarea{
 
 
 main .insights,
-main .insights.dashboard {
+main .insights.dashboard,
+main .insights.insurances {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.6rem;
@@ -280,7 +281,11 @@ main .insights{
     grid-template-columns: repeat(3, 1fr);
 }
 
-main .insights>div {
+main .insights.insurances {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+main .insights>.card {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -289,11 +294,11 @@ main .insights>div {
     transition: all 300ms ease;
 }
 
-main .insights>div:hover {
+main .insights>.card:hover {
     box-shadow: none;
 }
 
-main .insights>div span {
+main .insights>.card span {
     background: var(--color-primary);
     padding: 0.5rem;
     border-radius: 50%;
@@ -301,16 +306,17 @@ main .insights>div span {
     font-size: 2rem;
 }
 
-main .insights>div:nth-child(2) span {
+main .insights>.card:nth-child(2) span {
     background: var(--color-danger);
 }
 
-main .insights>div:nth-child(3) span {
+main .insights>.card:nth-child(3) span {
     background: var(--color-success);
 }
 
 
-main .insights.dashboard>div:last-child {
+main .insights.dashboard>.card:last-child,
+main .insights.insurances>.card:last-child {
     background: transparent;
     border: 2px dashed var(--color-primary);
     color: var(--color-primary);
@@ -648,6 +654,10 @@ main table tbody tr:last-child td {
     main .insights.dashboard>div:last-child{
         display: none;
     }
+
+     main .insights.dashboard, main .insights.insurances {
+         grid-template-columns: repeat(2, 1fr);
+     }
     main .bottom {
         width: 94%;
         position: absolute;
@@ -721,9 +731,21 @@ main table tbody tr:last-child td {
         width: 100%;
         margin: 0;
     }
+
+   
+    main .bottom table#insurances tbody tr>td:nth-child(3),
+     main .bottom table#insurances thead tr>th:nth-child(3){
+        display: none;
+    }
+
     main .bottom table thead tr>th:last-child,
     main .bottom table tbody tr>td:last-child {
         display: none;
+    }
+
+    main .bottom table#insurances tbody tr>td:last-child,
+     main .bottom table#insurances thead tr>th:last-child{
+        display: block;
     }
     .rigth {
         width: 94%;
