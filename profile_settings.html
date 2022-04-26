@@ -81,53 +81,69 @@
                                 <h4 class="text-muted">Change Profile Picture</h4>
                             </div>
                         </div>
-                        <form action="">
+                        <form action="#" class="user-settings">
                             <div class="form-row">
                                 <label for="">Name</label>
-                                <input class="primary" type="text" value="Essordo Abdellah" disabled>
-                                <h4 class="text-muted">Edit</h4>
+                                <input id="input-1" name="name" class="primary" type="text"
+                                    value="{{user.person.nom|capfirst}} {{user.person.prenom|capfirst}}" readonly>
+                                <button type="button" id="edit-1">
+                                    <h4 class="text-muted">Edit</h4>
+                                </button>
                             </div>
 
                             <div class="form-row">
                                 <label for="">Email</label>
-                                <input class="primary" type="email" value="essordo.abdellah@ensam-casa.ma" disabled>
-                                <h4 class="text-muted">Edit</h4>
+                                <input name="email" id="input-2" class="primary" type="email" value="{{user.email}}"
+                                    readonly>
+                                <button type="button" id="edit-2">
+                                    <h4 class="text-muted">Edit</h4>
                             </div>
 
                             <div class="form-row">
                                 <label for="">Gender</label>
-                                <input class="primary" type="text" value="Male" disabled>
-                                <h4 class="text-muted">Edit</h4>
+                                <input name="sexe" id="input-3" class="primary" type="text" value="{{user.person.sexe}}"
+                                    readonly>
+                                <button type="button" id="edit-3">
+                                    <h4 class="text-muted">Edit</h4>
                             </div>
 
                             <div class="form-row">
                                 <label for="">Birthday</label>
-                                <input class="primary" type="date" value="2001-08-10" disabled>
-                                <h4 class="text-muted">Edit</h4>
+                                <input id="input-4" name="datedenaissance" class="primary" type="date"
+                                    value="{{user.person.datedenaissance|date:'Y-m-d'}}" readonly>
+                                <button type="button" id="edit-4">
+                                    <h4 class="text-muted">Edit</h4>
                             </div>
 
                             <div class="form-row">
                                 <label for="">Phone Number</label>
-                                <input class="primary" type="number" value="0672407504" disabled>
-                                <h4 class="text-muted">Edit</h4>
+                                <input id="input-5" name="phone" class="primary" type="number"
+                                    value="{{user.person.phone}}" readonly>
+                                <button type="button" id="edit-5" onclick="switching(5)">
+                                    <h4 class="text-muted">Edit</h4>
                             </div>
-                            
                             <div class="form-row">
                                 <label for="">CIN</label>
-                                <input class="primary" type="text" value="K570940" disabled>
-                                <h4 class="text-muted">Edit</h4>
+                                <input id="input-6" name="CIN" class="primary" type="text" value="{{user.username}}"
+                                    readonly>
+                                <button type="button" id="edit-6">
+                                    <h4 class="text-muted">Edit</h4>
                             </div>
 
                             <div class="form-row">
                                 <label for="">Adress</label>
-                                <input class="primary" type="text" value="AV Mly Rachid N130" disabled>
-                                <h4 class="text-muted">Edit</h4>
+                                <input id="input-7" name="Adress" class="primary" type="text"
+                                    value="{{user.person.adresse}}" readonly>
+                                <button type="button" id="edit-7" onclick="switching(7)">
+                                    <h4 class="text-muted">Edit</h4>
                             </div>
 
                             <div class="form-row">
                                 <label for="">City</label>
-                                <input class="primary" type="text" value="Tangier" disabled>
-                                <h4 class="text-muted">Edit</h4>
+                                <input id="input-8" name="ville" class="primary" type="text"
+                                    value="{{user.person.ville}}" readonly>
+                                <button type="button" id="edit-8" onclick="switching(8)">
+                                    <h4 class="text-muted">Edit</h4>
                             </div>
 
                         </form>
@@ -166,28 +182,36 @@
                                     </small>
                                 </div>
                                 <label class="switch">
-                                    <input type="checkbox" checked>
+                                    <input id="insrurance-btn" onclick="show_form(this.id)" name="a_mutuelle"
+                                        type="checkbox" {% if user.person.patient.a_mutuelle %} checked {%endif%}>
                                     <span class="slider round"></span>
                                 </label>
                             </div>
-                            <form action="">
+                            <form action="#" class="user-settings hide-from">
                                 <div class="form-row">
                                     <label for="">N&deg Affiliation</label>
-                                    <input class="primary" type="text" value="I863IO" disabled>
-                                    <h4 class="text-muted">Edit</h4>
-                                </div>
+                                    <input id="input-9" name="n_affiliation" class="primary" type="text"
+                                        value="{{user.person.patient.n_affiliation}}" readonly>
+                                    <button type="button" id="edit-9" onclick="switching(9)">
+                                        <h4 class="text-muted">Edit</h4>
+                                </div></button>
 
                                 <div class="form-row">
                                     <label for="">N&deg Immatriculation</label>
-                                    <input class="primary" type="text" value="606077" disabled>
-                                    <h4 class="text-muted">Edit</h4>
+                                    <input id="input-10" name="immatriculation" class="primary" type="text"
+                                        value="{{user.person.patient.immatriculation}}" readonly>
+                                    <button type="button" id="edit-10" onclick="switching(10)">
+                                        <h4 class="text-muted">Edit</h4>
+                                    </button>
                                 </div>
 
                                 <div class="form-row">
                                     <label for="">Date d'adhesion</label>
-                                    <input class="primary" type="date" value="2022-01-01"
-                                        disabled>
-                                    <h4 class="text-muted">Edit</h4>
+                                    <input id="input-11" name="date_adhesion" class="primary" type="date"
+                                        value="{{user.person.patient.date_adhesion |date:'Y-m-d' }}" readonly>
+                                    <button type="button" id="edit-11" onclick="switching(11)">
+                                        <h4 class="text-muted">Edit</h4>
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -201,56 +225,6 @@
                 <!--------------- END OF CARD 2 ------------>
             </div>
             <!--------------- END OF INSIGHTS ------------>
-
-            <div class="bottom">
-                <!-- <h2>Used Drugs</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Brand Name</th>
-                            <th>Generic Name</th>
-                            <th>Strength</th>
-                            <th>Pack</th>
-                            <th>Form</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Apo-Ciproflox</td>
-                            <td>Ciprofloxacin Hydrochloride</td>
-                            <td>250mg</td>
-                            <td>100</td>
-                            <td>Tab</td>
-                        </tr>
-
-                        <tr>
-                            <td>Acetaminophen</td>
-                            <td>Acetaminophen</td>
-                            <td>500mg</td>
-                            <td>20</td>
-                            <td>Pill</td>
-                        </tr>
-
-                        <tr>
-                            <td>Apo-Ciproflox</td>
-                            <td>Ciprofloxacin Hydrochloride</td>
-                            <td>250mg</td>
-                            <td>100</td>
-                            <td>Tab</td>
-                        </tr>
-
-                        <tr>
-                            <td>Acetaminophen</td>
-                            <td>Acetaminophen</td>
-                            <td>500mg</td>
-                            <td>20</td>
-                            <td>Pill</td>
-                        </tr>
-
-                    </tbody>
-                </table> -->
-            </div>
         </main>
         <!--------------- END OF MAIN ------------>
         <div class="rigth">
@@ -288,7 +262,89 @@
                 </div>
             </div>
             <!--------------- END OF TOP ------------>
+            <div id="become-doctor" class="section-1">
+                <h2>Become a Doctor</h2>
+                <div class="rows privacy-settings">
+                    <div class="row">
+                        <div class="description">
+                            <h3>Activate Doctor</h3>
+                            <small class="text-muted">
+                                This option allows you to to become a doctor.
+                            </small>
+                        </div>
+                        <label class="switch">
+                            <input id="become-doctor-btn" onclick="show_form(this.id)" name="" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <form action="#" class="become-doctor-form hide-from">
+                        <div class="form-row">
+                            <label for="">INP</label>
+                            <input id="input-12" name="inp" class="primary" type="text" value="123456" readonly>
+                            <button type="button" id="edit-12" onclick="switching(12)">
+                                <h4 class="text-muted">Edit</h4>
+                        </div></button>
 
+                        <div class="form-row">
+                            <label for="">City</label>
+                            <input id="input-13" name="city" class="primary" type="text" value="Casablanca" readonly>
+                            <button type="button" id="edit-13" onclick="switching(13)">
+                                <h4 class="text-muted">Edit</h4>
+                            </button>
+                        </div>
+
+
+                    </form>
+                </div>
+
+
+            </div>
+
+            <div id="become-pharmacist" class="section-1">
+                <h2>Become a Pharmacist</h2>
+                <div class="rows privacy-settings">
+                    <div class="row">
+                        <div class="description">
+                            <h3>Activate Pharmacien</h3>
+                            <small class="text-muted">
+                                This option allows you to to become a pharmacist.
+                            </small>
+                        </div>
+                        <label class="switch">
+                            <input id="become-pharmacist-btn" onclick="show_form(this.id)" name="" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <form action="#" class="become-pharmacist-form hide-from">
+                        <div class="form-row">
+                            <label for="">INP</label>
+                            <input id="input-14" name="inp" class="primary" type="text" value="123456" readonly>
+                            <button type="button" id="edit-14" onclick="switching(14)">
+                                <h4 class="text-muted">Edit</h4>
+                        </div></button>
+
+                        <div class="form-row">
+                            <label for="">City</label>
+                            <input id="input-15" name="city" class="primary" type="text" value="Casablanca" readonly>
+                            <button type="button" id="edit-15" onclick="switching(15)">
+                                <h4 class="text-muted">Edit</h4>
+                            </button>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="submit-btn-holder" type="submit">
+                <div class="submit-btn">
+                    <span class="material-icons-sharp">
+                        save
+                    </span>
+                    <h3>&#32;Save Changes</h3>
+                </div>
+            </div>
 
         </div>
     </div>

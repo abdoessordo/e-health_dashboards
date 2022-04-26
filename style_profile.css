@@ -56,7 +56,7 @@ html {
     font-size: 14px;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     font-family: poppins, sans-serif;
@@ -67,7 +67,10 @@ body{
     color: var(--color-dark);
 }
 
-form, form input, form textarea, form button{
+form,
+form input,
+form textarea,
+form button {
     font-family: poppins, sans-serif;
     font-size: 1rem;
     background: none;
@@ -77,11 +80,11 @@ form, form input, form textarea, form button{
     font-weight: 500;
 }
 
-table{
-    border-collapse:collapse;
+table {
+    border-collapse: collapse;
 }
 
-form textarea{
+form textarea {
     resize: none;
     overflow: hidden;
 }
@@ -112,7 +115,7 @@ h2 {
     font-size: 1.4rem;
 }
 
-h3{
+h3 {
     font-size: 0.87rem;
 }
 
@@ -128,7 +131,7 @@ small {
     font-size: 0.75rem;
 }
 
-label{
+label {
     font-weight: 700;
 }
 
@@ -140,7 +143,7 @@ label{
     overflow: hidden;
 }
 
-.big-profile-photo{
+.big-profile-photo {
     width: 7rem;
     height: 7rem;
 }
@@ -292,11 +295,11 @@ main .insights {
 
 }
 
-main .private{
-    grid-template-columns: auto ;
+main .private {
+    grid-template-columns: auto;
 }
 
-main .card .middle{
+main .card .middle {
     text-align: center;
 }
 
@@ -323,25 +326,25 @@ main .insights>div.profile .left {
     align-items: center;
 }
 
-main .insights>div.profile .left h2{
+main .insights>div.profile .left h2 {
     margin: 1rem 0 0 0;
 }
 
-main .insights>div.profile .left .text-muted{
+main .insights>div.profile .left .text-muted {
     margin-top: 0;
     font-weight: 400;
 }
 
-main .insights>div.profile .left .appoitements{
+main .insights>div.profile .left .appoitements {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-main .insights>div.profile .left .appoitements .past{
+main .insights>div.profile .left .appoitements .past {
     border-right: 1px solid var(--color-light);
 }
 
-main .insights>div.profile .left #send-msg-btn{
+main .insights>div.profile .left #send-msg-btn {
     background-color: var(--color-primary);
     color: var(--color-white);
     margin-top: 2rem;
@@ -351,17 +354,17 @@ main .insights>div.profile .left #send-msg-btn{
     border-radius: var(--card-border-radius);
 }
 
-main .insights>div.profile .left #send-msg-btn h3{
+main .insights>div.profile .left #send-msg-btn h3 {
     margin: 0;
 }
 
-main .insights>div.profile .rigth{
+main .insights>div.profile .rigth {
     margin-top: 0;
     /* display: grid; */
     /* grid-template-columns: 1fr; */
 }
 
-#edit span{
+#edit span {
     background: unset;
     padding: unset;
     border-radius: unset;
@@ -374,19 +377,19 @@ main .insights>div.profile .rigth .info {
     margin-top: 1.8rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 4rem ;
+    gap: 0 4rem;
 }
 
-main .insights>div.profile .rigth .info .info-elem{
+main .insights>div.profile .rigth .info .info-elem {
     border-bottom: 1px solid var(--color-light);
 }
 
-main .insights>div.profile .rigth .info .info-elem .user-info{
+main .insights>div.profile .rigth .info .info-elem .user-info {
     font-weight: 400;
 }
 
 main .insights>div.profile .rigth .info .info-elem:last-child,
-main .insights>div.profile .rigth .info .info-elem:nth-child(7){
+main .insights>div.profile .rigth .info .info-elem:nth-child(7) {
     border: none;
 }
 
@@ -396,23 +399,23 @@ main .insights>div:hover {
     box-shadow: none;
 }
 
-main .insights.private>div.profile{
+main .insights.private>div.profile {
     display: grid;
     grid-template-columns: auto 80%;
     gap: 1rem;
 }
 
-main .insights.private>div.profile>span:first-child{
+main .insights.private>div.profile>span:first-child {
     text-align: center;
 }
 
-main .insights.private>div.profile>div{
+main .insights.private>div.profile>div {
     margin-right: 1rem;
     text-align: justify;
 }
 
 
-main .insights.private>div span.locked{
+main .insights.private>div span.locked {
     padding: 0.5rem;
     border-radius: 0%;
     color: var(--color-dark);
@@ -441,36 +444,37 @@ main .insights small {
     margin-top: 1.3rem;
 }
 
-main .insights.settings{
+main .insights.settings {
     grid-template-columns: auto 40rem;
 }
 
-main .insights.settings>div  .row{
+main .insights.settings>div .row {
     display: grid;
     grid-template-columns: 7rem auto;
 }
 
-main .insights.settings>div .row .profile-photo{
+main .insights.settings>div .row .profile-photo {
     width: 5rem;
     height: 5rem;
 }
 
-main .insights.settings>div .row .description{
+main .insights.settings>div .row .description {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-main .insights.settings>div .row .description h4{
+main .insights.settings>div .row .description h4 {
     cursor: pointer;
 }
 
-main .insights.settings>div form{
+.rigth .section-1 form,
+main .insights.settings>div form {
     margin-top: 2rem;
-
 }
 
-main .insights.settings>div form .form-row{
+.rigth .section-1 form .form-row,
+.insights.settings>div form .form-row {
     display: grid;
     grid-template-columns: 12rem auto 5rem;
     cursor: pointer;
@@ -478,109 +482,145 @@ main .insights.settings>div form .form-row{
     margin-bottom: 1rem;
 }
 
-main .insights.settings>div form .form-row h4{
-text-align: center;
+.rigth .section-1 form .form-row {
+    grid-template-columns: 5rem auto 5rem;
+
 }
-main .insights.settings>div form .form-row:last-child{
+
+form .form-row input.edit-on {
+    color: red;
+    border-bottom: 1px solid var(--color-light);
+}
+
+.red-color {
+    color: red;
+}
+
+.rigth .section-1 form .form-row button,
+main .insights.settings>div form .form-row button {
+    cursor: pointer;
+}
+
+main .insights.settings>div form .form-row h4 {
+    text-align: center;
+}
+main .insights.settings>div form .form-row:last-child {
     margin-bottom: 0;
 }
 
-main form.add-form .form-row{
+main form.add-form .form-row {
     display: grid;
     gap: 5rem;
     user-select: none;
     margin-bottom: 3rem;
 }
 
-main form#form-trait .form-row{
+main form#form-trait .form-row {
     grid-template-columns: 12rem auto 5rem;
 }
 
-main form#form-med .form-row{
+main form#form-med .form-row {
     grid-template-columns: 12rem 10rem auto 5rem;
 }
 
-main form.add-form .form-row>div{
+main form.add-form .form-row>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-bottom: 1px solid var(--color-light);
 }
 
-main form.add-form .form-row>div *:last-child{
-    padding-top:  2rem;
+main form.add-form .form-row>div *:last-child {
+    padding-top: 2rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
 }
 
-main form.add-form .form-row h4{
-text-align: center;
+main form.add-form .form-row h4 {
+    text-align: center;
 }
-main form.add-form .form-row:last-child{
+main form.add-form .form-row:last-child {
     margin-bottom: 0;
 }
-main form.add-form .form-row div:last-child{
+main form.add-form .form-row div:last-child {
     justify-content: center;
     color: red;
     border: none;
 }
 
-main form.add-form .form-row div:last-child span{
+main form.add-form .form-row div:last-child span {
     cursor: pointer;
 }
-
-
-
 main form.add-form .add-more-btn,
-main form.add-form button .submit-btn{
+.submit-btn-holder .submit-btn,
+main form.add-form button .submit-btn {
     display: flex;
     align-items: center;
     width: fit-content;
-    padding:  calc(0.5 * var(--card-padding));
+    padding: calc(0.5 * var(--card-padding));
     margin-top: 2rem;
     border: 2px dashed var(--color-primary);
-    border-radius: var(--border-radius-3);    
+    border-radius: var(--border-radius-3);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
     color: var(--color-primary);
     cursor: pointer;
 }
 
+.submit-btn-holder .submit-btn:hover {
+    padding: calc(0.5 * var(--card-padding)) var(--card-padding);
+}
 
-main form.add-form button{
+
+main form.add-form button {
     width: 100%;
     margin-top: 2rem;
 }
 
-main form.add-form button .submit-btn{
+.submit-btn-holder {
+    position: absolute;
+    bottom: 5rem;
+    right: 1rem;
+}
+
+main form.user-settings .submit-btn {
+    padding: calc(0.3 * var(--card-padding));
+}
+
+main form.user-settings .submit-btn:hover {
+    padding: calc(0.3 * var(--card-padding)) var(--card-padding);
+}
+
+.submit-btn-holder .submit-btn,
+main form.add-form button .submit-btn {
     border: 2px solid var(--color-primary);
     margin: 0 auto;
-
 }
 
 main form.add-form .add-more-btn:hover,
-main form.add-form .submit-btn:hover{
+main form.add-form .submit-btn:hover {
     padding: calc(0.5 * var(--card-padding)) calc(2 * var(--card-padding));
 }
 
-main .insights.settings .section-1{
+main .insights.settings .section-1 {
     margin-bottom: 3rem;
 }
 
-main .insights.settings .section-1 .privacy-settings .row{
+main .insights.settings .section-1 .privacy-settings .row,
+.rigth .section-1 .privacy-settings .row {
     display: grid;
     grid-template-columns: auto 5rem;
 }
 
 main .insights.settings .section-1 .privacy-settings .row .description h3,
-main .insights.settings .section-1 .privacy-settings .row .description .text-muted{
+main .insights.settings .section-1 .privacy-settings .row .description .text-muted {
     margin: 0;
 }
 
-main .insights.settings .section-1 .privacy-settings .row{
+main .insights.settings .section-1 .privacy-settings .row {
     margin-bottom: 0;
 }
-main .insights.settings .section-1 .privacy-settings .row>label{
+main .insights.settings .section-1 .privacy-settings .row>label {
     margin: auto 0;
     margin-left: auto;
     vertical-align: middle;
@@ -590,63 +630,63 @@ main .insights.settings .section-1 .privacy-settings .row>label{
 /* switch */
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
+input:checked+.slider {
+    background-color: #2196F3;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 /* end switch  */
 
@@ -790,6 +830,10 @@ main table tbody tr:last-child td {
     display: block;
 }
 
+.hide-from {
+    display: none;
+}
+
 
 
 
@@ -925,18 +969,18 @@ main table tbody tr:last-child td {
 
     main .insights,
     main .insights.settings,
-    main .insights.settings >div:nth-child(2) {
+    main .insights.settings>div:nth-child(2) {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    main .insights >div:nth-child(2) {
+    main .insights>div:nth-child(2) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.8rem;
     }
 
     main .insights.settings>div form .form-row {
-    grid-template-columns: 10rem auto 5rem;
+        grid-template-columns: 10rem auto 5rem;
     }
 
     main .bottom {
@@ -950,17 +994,17 @@ main table tbody tr:last-child td {
         right: 1rem;
     }
 
-    main #form-holder-med.card{
+    main #form-holder-med.card {
         width: 70%;
     }
 
-    main form#form-med .form-row{
+    main form#form-med .form-row {
         gap: 1rem;
-        grid-template-columns:  10rem 8rem auto 3rem;
-    } 
+        grid-template-columns: 10rem 8rem auto 3rem;
+        }
 
     main #form-holder-trait.card,
-    main #form-holder-med.card{
+    main #form-holder-med.card {
         position: absolute;
     }
 }
@@ -1034,17 +1078,16 @@ main table tbody tr:last-child td {
         border-bottom: 1px solid var(--color-light);
     }
 
-    main .insights>div.profile .rigth{
+    main .insights>div.profile .rigth {
         margin: 0 auto;
         padding: 0;
     }
 
-    main .insights >div:nth-child(2) {
+    main .insights>div:nth-child(2) {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 0.8rem;
     }
-    
 
     main .bottom {
         position: relative;
@@ -1066,6 +1109,7 @@ main table tbody tr:last-child td {
     .rigth {
         width: 94%;
         margin: 0 auto 4rem;
+        padding: 0 1rem;
     }
 
     .rigth .top {
@@ -1109,7 +1153,18 @@ main table tbody tr:last-child td {
         font-size: 2rem;
     }
 
+    .rigth #become-doctor{
+        margin-top: -3rem;
+    }
+
     .drop-down-content {
         top: 4rem
+    }
+
+    .submit-btn-holder{
+        position: relative;
+        right: unset;
+        bottom: unset;
+        margin-top: 3rem;
     }
 }

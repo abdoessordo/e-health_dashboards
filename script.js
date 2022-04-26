@@ -1,20 +1,25 @@
-const sideMenu = document.querySelector("aside")
-const menuBtn = document.querySelector("#menu-btn")
-const closeBtn = document.querySelector("#close-btn")
-const themeToggler = document.querySelector("#theme-toggler")
+try {
+    const sideMenu = document.querySelector("aside")
+    const menuBtn = document.querySelector("#menu-btn")
+    const closeBtn = document.querySelector("#close-btn")
 
 
-// show sidebar
-menuBtn.addEventListener('click', () => {
-    sideMenu.style.display = 'block';
-})
+    // show sidebar
+    menuBtn.addEventListener('click', () => {
+        sideMenu.style.display = 'block';
+    })
 
-// close sidebar
-closeBtn.addEventListener('click', () => {
-    sideMenu.style.display = 'none';
-})
+    // close sidebar
+    closeBtn.addEventListener('click', () => {
+        sideMenu.style.display = 'none';
+    })
+
+} catch (error) {
+
+}
 
 // change theme
+let themeToggler = document.querySelector("#theme-toggler")
 themeToggler.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme-variables')
     themeToggler.querySelector("span:first-child").classList.toggle('active')
@@ -63,7 +68,7 @@ const create_row = (type, row_num) => {
             </div>
         `
     } else if (type === 'trait') {
-           row.innerHTML = `
+        row.innerHTML = `
             <div>
                 <label for="">Traitement</label>
                 <input class="primary" type="text" placeholder="Enter Traitement">
@@ -96,3 +101,56 @@ const add_row = (type) => {
     let form_holder = document.querySelector(`#form-${type}>.rows`);
     form_holder.appendChild(new_row)
 }
+// show forms
+const show_form = (id) => {
+    switch (id) {
+        case "insrurance-btn":
+            document.querySelector("main .section-1 .rows.privacy-settings form").classList.toggle("hide-from")
+            break;
+
+        case "become-doctor-btn":
+            document.querySelector(".rigth .section-1 .rows.privacy-settings form.become-doctor-form").classList.toggle("hide-from")
+            break
+
+        case "become-pharmacist-btn":
+            document.querySelector(".rigth .section-1 .rows.privacy-settings form.become-pharmacist-form").classList.toggle("hide-from")
+            break
+
+        default:
+            break;
+    }
+}
+
+// Editing
+const switching = (i) => {
+    document.querySelectorAll(`.form-row input, .form-row button h4 `).forEach(inp => {
+        inp.classList.remove('edit-on')
+        inp.setAttribute("readonly", "")
+        inp.classList.remove('red-color')
+    })
+
+    document.querySelector(`.form-row button#edit-${i} h4`).classList.add('red-color')
+    inp = document.getElementById("input-" + i);
+    inp.removeAttribute("readonly")
+    inp.classList.toggle('edit-on')
+}
+
+all_form_elements = document.querySelectorAll(`.form-row input, .form-row button h4 `)
+
+
+window.addEventListener("click", e => {
+    clicked = false
+    for (let i = 0; i < all_form_elements.length; i++) {
+        if (e.target === all_form_elements[i]) {
+            clicked = true
+            break
+        }
+    }
+    if (!clicked) {
+        document.querySelectorAll(`.form-row input, .form-row button h4 `).forEach(inp => {
+            inp.classList.remove('edit-on')
+            inp.setAttribute("readonly", "")
+            inp.classList.remove('red-color')
+        })
+    }
+})
