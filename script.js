@@ -147,10 +147,25 @@ window.addEventListener("click", e => {
         }
     }
     if (!clicked) {
-        document.querySelectorAll(`.form-row input, .form-row button h4 `).forEach(inp => {
+        document.querySelectorAll(`form.user-settings .form-row input, .form-row button h4, form.become-doctor-form .form-row input, form.become-pharmacist-form .form-row input`).forEach(inp => {
             inp.classList.remove('edit-on')
             inp.setAttribute("readonly", "")
             inp.classList.remove('red-color')
         })
     }
 })
+try {
+    const but1 = document.querySelector("main .doctor-card.card .doc-payment .buttons a div")
+    const but2 = document.querySelector("main .doctor-card.card .doc-payment .buttons a:last-child div")
+
+    but1.addEventListener('mouseover', () => {
+        but2.classList.add('but1')
+    })
+
+    but1.addEventListener('mouseout', () => {
+        but2.classList.remove('but1')
+    })
+
+} catch (error) {
+    
+}

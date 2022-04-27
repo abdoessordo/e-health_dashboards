@@ -545,12 +545,11 @@ main form.add-form .form-row:last-child {
 main form.add-form .form-row div:last-child {
     justify-content: center;
     color: red;
+    cursor: pointer;
     border: none;
 }
 
-main form.add-form .form-row div:last-child span {
-    cursor: pointer;
-}
+
 main form.add-form .add-more-btn,
 .submit-btn-holder .submit-btn,
 main form.add-form button .submit-btn {
