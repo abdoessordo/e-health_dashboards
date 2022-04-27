@@ -155,16 +155,19 @@ window.addEventListener("click", e => {
     }
 })
 try {
-    const but1 = document.querySelector("main .doctor-card.card .doc-payment .buttons a div")
-    const but2 = document.querySelector("main .doctor-card.card .doc-payment .buttons a:last-child div")
+    const but1 = document.querySelectorAll("main .doctor-card.card .doc-payment .buttons a div")
+    const but2 = document.querySelectorAll("main .doctor-card.card .doc-payment .buttons a:last-child div")
 
-    but1.addEventListener('mouseover', () => {
-        but2.classList.add('but1')
-    })
+    for (let i = 0; i < but1.length; i += 2){
+         but1[i].addEventListener('mouseover', () => {
+             but2[i / 2].classList.add('but1')
+         })
 
-    but1.addEventListener('mouseout', () => {
-        but2.classList.remove('but1')
-    })
+         but1[i].addEventListener('mouseout', () => {
+             but2[i / 2].classList.remove('but1')
+         })
+    }
+
 
 } catch (error) {
     
