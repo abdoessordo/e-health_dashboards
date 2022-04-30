@@ -521,6 +521,7 @@ main .bottom h2 {
     margin-bottom: 0.8rem;
 }
 
+
 main .bottom table {
     background: var(--color-white);
     width: 100%;
@@ -866,6 +867,15 @@ main form#search-doc .submit-btn {
     align-items: center;
     cursor: pointer;
 }
+
+ .section-4 .add-new>div {
+     display: flex;
+ }
+
+
+ .section-4 .add-new h3 {
+     margin: 0;
+ }
 
 
 .show-all-btn {

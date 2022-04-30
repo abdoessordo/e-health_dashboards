@@ -66,30 +66,18 @@
         </aside>
         <!-- END OF ASIDE -->
         <main>
-            <h1>Essordo Abdellah</h1>
+            <h1>Details</h1>
 
             <div class="insights">
-                <div class="card profile">
+                <div class="card profile doctor">
                     <div class="left">
                         <div class="big-profile-photo">
                             <img src="./images/profile-1.jpg" alt="">
                         </div>
                         <div class="middle">
 
-                            <h2>Essordo Abdellah</h2>
+                            <h2>Dr.Essordo Abdellah</h2>
                             <h3 class="text-muted">essordo.abdellah@ensam-casa.ma</h3>
-
-                            <h3>Appointments</h3>
-                            <div class="appoitements">
-                                <div class="past">
-                                    <h2>5</h2>
-                                    <h3 class="text-muted">Past</h3>
-                                </div>
-                                <div class="future">
-                                    <h2>2</h2>
-                                    <h3 class="text-muted">Upcoming</h3>
-                                </div>
-                            </div>
                             <div id="send-msg-btn">
                                 <h3>Send Message</h3>
                             </div>
@@ -98,11 +86,6 @@
 
                     </div>
                     <div class="rigth">
-                        <a href="" class="primary" id="edit">
-                            <span class="material-icons-sharp">
-                                edit
-                            </span>
-                        </a>
                         <div class="info">
                             <div class="info-elem">
                                 <h3 class="text-muted">Gender</h3>
@@ -129,12 +112,12 @@
                                 <h3 class="user-info">Tangier</h3>
                             </div>
                             <div class="info-elem">
-                                <h3 class="text-muted">Registration Date</h3>
-                                <h3 class="user-info">1 Jan 2022</h3>
+                                <h3 class="text-muted">Speciality</h3>
+                                <h3 class="user-info">Dentist</h3>
                             </div>
                             <div class="info-elem">
                                 <h3 class="text-muted ">Member Status</h3>
-                                <h3 class="user-info">Active Member</h3>
+                                <h3 class="user-info">Active Doctor</h3>
                             </div>
                         </div>
 
@@ -144,55 +127,44 @@
                 <!--------------- END OF CARD 1 ------------>
                 <div class="">
                     <div class="div">
-                        <div class="section-1">
-                            <h2>Recent Consultations</h2>
-                            <div class="rows">
-                                <div class="row">
-                                    <div class="profile-photo">
-                                        <img src="./images/profile-2.jpg" alt="">
-                                    </div>
-                                    <div class="description">
-                                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
-                                    </div>
-                                </div>
+                        <div class="section-4">
+                            <h2>Doctor's Notes</h2>
 
-                                <div class="row">
-                                    <div class="profile-photo">
-                                        <img src="./images/profile-3.jpg" alt="">
-                                    </div>
-                                    <div class="description">
-                                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
-                                    </div>
+                            <div class="item">
+                                <div class="primary">
+                                    <span class="material-icons-sharp">looks_one</span>
+                                </div>
+                                <div class="description">
+                                    <p><b> Lorem ipsum dolor sit amet consectetur adipisicing elit</b></p>
                                 </div>
                             </div>
-                        </div>
-                        <a href="#" class="show-all-btn">Show All</a>
-                    </div>
 
-                    <div class="div">
-                        <div class="section-1">
-                            <h2>Recent Consultations</h2>
-                            <div class="rows">
-                                <div class="row">
-                                    <div class="profile-photo">
-                                        <img src="./images/profile-2.jpg" alt="">
-                                    </div>
-                                    <div class="description">
-                                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
-                                    </div>
+                            <div class="item">
+                                <div class="success">
+                                    <span class="material-icons-sharp">looks_two</span>
                                 </div>
-
-                                <div class="row">
-                                    <div class="profile-photo">
-                                        <img src="./images/profile-3.jpg" alt="">
-                                    </div>
-                                    <div class="description">
-                                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
-                                    </div>
+                                <div class="description">
+                                    <p><b> Lorem ipsum dolor sit amet consectetur adipisicing elit</b></p>
                                 </div>
                             </div>
+
+                            <div class="item">
+                                <div class="danger">
+                                    <span class="material-icons-sharp">looks_3</span>
+                                </div>
+                                <div class="description">
+                                    <p><b> Lorem ipsum dolor sit amet consectetur adipisicing elit</b></p>
+                                </div>
+                            </div>
+                            <div class="item add-new">
+                                <div>
+                                    <span class="material-icons-sharp primary">add</span>
+                                </div>
+                                <h3>
+                                    Create New
+                                </h3>
+                            </div>
                         </div>
-                        <a href="#" class="show-all-btn">Show All</a>
                     </div>
 
 
@@ -205,9 +177,78 @@
             <!--------------- END OF INSIGHTS ------------>
 
             <div class="bottom">
-                <h2>Used Drugs</h2>
+                <div class="table-title">
+                    <h2>Traitements</h2>
+                    <a href="" class="submit-btn-holder details">
+                        <div class="submit-btn">
+                            <div class="item add-new">
+                                <div>
+                                    <span class="material-icons-sharp primary">add</span>
+                                </div>
+                                <h3>Add</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
                 <div class="card">
-                    <table>
+                    <table id="table-trait">
+                        <thead>
+                            <tr>
+                                <th>Traitement</th>
+                                <th>Description</th>
+                                <th>Price</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Radio</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis itaque
+                                    neque tenetur aperiam distinctio ipsam deserunt </td>
+                                <td>500</td>
+                            </tr>
+
+                            <tr>
+                                <td>Radio</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis itaque
+                                    neque tenetur aperiam distinctio ipsam deserunt </td>
+                                <td>500</td>
+                            </tr>
+
+                            <tr>
+                                <td>Radio</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis itaque
+                                    neque tenetur aperiam distinctio ipsam deserunt </td>
+                                <td>500</td>
+                            </tr>
+
+                            <tr>
+                                <td>Radio</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis itaque
+                                    neque tenetur aperiam distinctio ipsam deserunt </td>
+                                <td>500</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-title">
+                    <h2>Drugs</h2>
+                    <a href="" class="submit-btn-holder details">
+                        <div class="submit-btn">
+                            <div class="item add-new">
+                                <div>
+                                    <span class="material-icons-sharp primary">add</span>
+                                </div>
+                                <h3>Add</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <table id="table-drug">
                         <thead>
                             <tr>
                                 <th>Brand Name</th>
@@ -254,7 +295,6 @@
                         </tbody>
                     </table>
                 </div>
-                <a href="#" class="show-all-btn">Show All</a>
             </div>
         </main>
         <!--------------- END OF MAIN ------------>
@@ -293,89 +333,6 @@
                 </div>
             </div>
             <!--------------- END OF TOP ------------>
-<!-- 
-
-            <div class="section-3">
-                <h2>Recent Prescriptions</h2>
-                <div class="rows">
-                    <div class="row">
-                        <div class="profile-photo">
-                            <img src="./images/profile-2.jpg" alt="">
-                        </div>
-                        <div class="description">
-                            <p><b>Dr.Mike Tyson</b><br>2 Medicaments &#8226 Ongoing</p>
-                        </div>
-                        <span class="material-icons-sharp">open_in_new</span>
-                    </div>
-
-                    <div class="row">
-                        <div class="profile-photo">
-                            <img src="./images/profile-3.jpg" alt="">
-                        </div>
-                        <div class="description">
-                            <p><b>Dr.Mike Tyson</b><br>4 Medicaments &#8226 Ongoing</p>
-                        </div>
-                        <span class="material-icons-sharp">open_in_new</span>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="profile-photo">
-                            <img src="./images/profile-4.jpg" alt="">
-                        </div>
-                        <div class="description">
-                            <p><b>Dr.Mike Tyson</b><br>2 Medicaments &#8226 Finished</p>
-                        </div>
-                        <span class="material-icons-sharp">open_in_new</span>
-
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="show-all-btn">Show All</a> -->
-
-            <!--------------- END OF SECTION-1 ------------>
-<!-- 
-            <div class="section-4">
-                <h2>Insurances</h2>
-
-
-                <div class="item">
-                    <div class="primary">
-                        <span class="material-icons-sharp">looks_one</span>
-                    </div>
-                    <div class="description">
-                        <p><b>$15,000</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
-                    </div>
-                    <div>
-                        <span class="material-icons-sharp primary">open_in_new</span>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="success">
-                        <span class="material-icons-sharp">looks_two</span>
-                    </div>
-                    <div class="description">
-                        <p><b>$15,000</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
-                    </div>
-                    <div>
-                        <span class="material-icons-sharp primary">open_in_new</span>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="danger">
-                        <span class="material-icons-sharp">looks_3</span>
-                    </div>
-                    <div class="description">
-                        <p><b>$15,000</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
-                    </div>
-                    <div>
-                        <span class="material-icons-sharp primary">open_in_new</span>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="show-all-btn">Show All</a> -->
 
         </div>
     </div>
