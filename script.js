@@ -3,7 +3,13 @@ try {
     const menuBtn = document.querySelector("#menu-btn")
     const closeBtn = document.querySelector("#close-btn")
 
+    document.querySelector(".popup-holder .card .close-btn span").addEventListener("click", () => {
+        document.querySelector(".popup-holder").classList.add("hide")
+    })
 
+    document.querySelector("#add-note").addEventListener("click", () => {
+        document.querySelector(".popup-holder").classList.remove("hide")
+    })
     // show sidebar
     menuBtn.addEventListener('click', () => {
         sideMenu.style.display = 'block';

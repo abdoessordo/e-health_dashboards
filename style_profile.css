@@ -873,6 +873,9 @@ main table tbody tr:last-child td {
     display: none;
 }
 
+.popup-holder.hide {
+    display: none;
+}
 
 
 
@@ -976,6 +979,7 @@ main table tbody tr:last-child td {
     cursor: pointer;
 }
 
+.popup-holder .add-new,
 .section-4 .add-new {
     background-color: transparent;
     border: 2px dashed var(--color-primary);
@@ -986,13 +990,76 @@ main table tbody tr:last-child td {
     cursor: pointer;
 }
 
+.popup-holder .add-new>div,
 .section-4 .add-new>div {
     display: flex;
 }
 
 
+.popup-holder .add-new h3,
 .section-4 .add-new h3 {
     margin: 0;
+}
+
+.popup-holder .add-new {
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+    padding: 1rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    float: right;
+}
+
+.popup-holder .add-new:hover {
+    box-shadow: none;
+}
+
+/* ====================================================
+==================== POP UP ====================
+======================================================= */
+
+.popup-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    z-index: 100;
+}
+
+.popup-holder .card {
+    width: 30%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+}
+
+.popup-holder .card .close-btn {
+    display: flex;
+}
+
+.popup-holder .card .close-btn span {
+    margin-left: auto;
+    transition: all 300ms ease;
+}
+
+.popup-holder .card .close-btn span:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.popup-holder .card form .form-row {
+    margin: 2rem 0
+}
+
+.popup-holder .card form .form-row input {
+    width: 100%;
 }
 
 /* ====================================================
@@ -1224,5 +1291,8 @@ main table tbody tr:last-child td {
         right: unset;
         bottom: unset;
         margin-top: 3rem;
+    }
+    .popup-holder .card{
+        width: 80%;
     }
 }
