@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style/style.css">
 
     <!-- MATRIAL ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
@@ -20,7 +20,7 @@
         <aside>
             <div class="top">
                 <div class="logo">
-                    <img src="./images/logo.png" alt="">
+                    <img src="../images/logo.png" alt="">
                     <h2>e-<span class="danger">HEALTH</span></h2>
                 </div>
                 <div class="close" id="close-btn">
@@ -29,36 +29,36 @@
             </div>
 
             <div class="sidebar">
-                <a href="" class="active">
+                <a href="./doctor.html" class="active">
                     <span class="material-icons-sharp">dashboard</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="./patient_profile_privee.html" >
+                <a href="./doctor_all_patient.html">
                     <span class="material-icons-sharp"> people_alt</span>
                     <h3>My Patients</h3>
                 </a>
-                <a href="">
-                    <span class="material-icons-sharp">attach_money</span>
-                    <h3>All Sales</h3>
+                <a href="./doctor_consultations.html">
+                    <span class="material-icons-sharp">medication</span>
+                    <h3>Consultations</h3>
                 </a>
-                <a href="">
-                    <span class="material-icons-sharp">receipt_long</span>
-                    <h3>All Orders</h3>
+                <a href="./doctor_appointments.html">
+                    <span class="material-icons-sharp">event</span>
+                    <h3>Appointments</h3>
                 </a>
-                <a href="">
+                <a href="../shared/messages.html">
                     <span class="material-icons-sharp">mail_outline</span>
                     <h3>Messages</h3>
                     <span class="message-count">26</span>
                 </a>
-                <a href="">
+                <a href="./doctor_reclamations.html">
                     <span class="material-icons-sharp">report_gmailerrorred</span>
                     <h3>Reclamation</h3>
                 </a>
-                <a href="">
+                <a href="../shared/profile_settings.html">
                     <span class="material-icons-sharp">manage_accounts</span>
                     <h3>Settings</h3>
                 </a>
-                <a href="./index.html">
+                <a href="../index.html">
                     <span class="material-icons-sharp">logout</span>
                     <h3>Logout</h3>
                 </a>
@@ -68,7 +68,7 @@
         <main>
             <h1>Dashboard</h1>
 
-          <div class="insights dashboard">
+            <div class="insights dashboard">
                 <div class="card">
                     <span class="material-icons-sharp">people_alt</span>
                     <div class="middle">
@@ -84,10 +84,10 @@
                 <!--------------- END OF CARD 1 ------------>
 
                 <div class="card">
-                    <span class="material-icons-sharp">analytics</span>
+                    <span class="material-icons-sharp">event</span>
                     <div class="middle">
-                        <h3>Total Sales</h3>
-                        <h1>$1,700</h1>
+                        <h3>Appointments</h3>
+                        <h1>56</h1>
                     </div>
                     <small class="text-muted">
                         Last Week
@@ -96,10 +96,10 @@
                 <!--------------- END OF CARD 2 ------------>
 
                 <div class="card">
-                    <span class="material-icons-sharp">bar_chart</span>
+                    <span class="material-icons-sharp">phone_in_talk</span>
                     <div class="middle">
-                        <h3>Total Expenses</h3>
-                        <h1>$500</h1>
+                        <h3>Phone Calls</h3>
+                        <h1>356</h1>
                     </div>
                     <small class="text-muted">
                         Last Week
@@ -107,10 +107,10 @@
                 </div>
                 <!--------------- END OF CARD 3 ------------>
                 <div class="card">
-                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <span class="material-icons-sharp">medication</span>
                     <div class="middle">
-                        <h3>Total Income</h3>
-                        <h1>$1,200</h1>
+                        <h3>Consultations</h3>
+                        <h1>84</h1>
                     </div>
                     <small class="text-muted">
                         Last Week
@@ -124,15 +124,13 @@
             </div>
             <!--------------- END OF INSIGHTS ------------>
 
-
             <div class="bottom">
-                <h2>Recent Orders</h2>
-                <div class="card">
+                <h2>My appointments</h2>
+               <div class="card">
                     <table>
                         <thead>
                             <tr>
-                                <th>Product Name</th>
-                                <th>Quantity</th>
+                                <th>Patient Name</th>
                                 <th>Date</th>
                                 <th>Time</th>
                                 <th>Status</th>
@@ -141,8 +139,7 @@
 
                         <tbody>
                             <tr>
-                                <td>Doliprane</td>
-                                <td>100</td>
+                                <td>Salah Eddine Belhiak</td>
                                 <td>25 Mai 2022</td>
                                 <td>01:00 PM</td>
                                 <td class="warning">
@@ -151,8 +148,7 @@
                             </tr>
 
                             <tr>
-                                <td>Doliprane</td>
-                                <td>100</td>
+                                <td>Salah Eddine Belhiak</td>
                                 <td>25 Mai 2022</td>
                                 <td>01:00 PM</td>
                                 <td class="warning">
@@ -161,8 +157,7 @@
                             </tr>
 
                             <tr>
-                                <td>Pomada Safra</td>
-                                <td>500</td>
+                                <td>Essordo Abdellah</td>
                                 <td>10 Mai 2022</td>
                                 <td>01:00 PM</td>
                                 <td class="success">
@@ -171,8 +166,7 @@
                             </tr>
 
                             <tr>
-                                <td>Pomada Safra</td>
-                                <td>500</td>
+                                <td>Essordo Abdellah</td>
                                 <td>10 Mai 2022</td>
                                 <td>01:00 PM</td>
                                 <td class="success">
@@ -181,8 +175,7 @@
                             </tr>
 
                             <tr>
-                                <td>Pomada Safra</td>
-                                <td>500</td>
+                                <td>Essordo Abdellah</td>
                                 <td>10 Mai 2022</td>
                                 <td>01:00 PM</td>
                                 <td class="success">
@@ -191,8 +184,7 @@
                             </tr>
 
                             <tr>
-                                <td>Pomada Safra</td>
-                                <td>500</td>
+                                <td>Essordo Abdellah</td>
                                 <td>10 Mai 2022</td>
                                 <td>01:00 PM</td>
                                 <td class="success">
@@ -201,18 +193,17 @@
                             </tr>
 
                             <tr>
-                                <td>Pomada Safra</td>
-                                <td>500</td>
+                                <td>Essordo Abdellah</td>
                                 <td>10 Mai 2022</td>
                                 <td>01:00 PM</td>
                                 <td class="success">
                                     <span class="material-icons-sharp"> done</span>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <a class="show-all-btn" href="#">Show All</a>
+                            </tbody>
+                            </table>
+               </div>
+                <a class="show-all-btn" href="./doctor_appointments.html">Show All</a>
             </div>
         </main>
         <!--------------- END OF MAIN ------------>
@@ -229,30 +220,35 @@
                     <div class="info">
                         <p>Hey, <b>Abdellah</b></p>
                         <small class="role" onclick="dropMenu(this)">
-                            <small class="text-muted">Pharmacien</small>
+                            <small class="text-muted">Doctor</small>
                             <span class="material-icons-sharp">expand_more</span>
                         </small>
                         <ul class="drop-down-content">
-                                <h3><li><a href="./patient.html">Patient</a></li></h3>
-                                <h3><li><a href="./doctor.html">Docteur</a></li></h3>
-                                <h3><li><a href="./pharmacien.html">Pharmacien</a></li></h3>
+                            <h3>
+                                <li><a href="../patient/patient.html">Patient</a></li>
+                            </h3>
+                            <h3>
+                                <li><a href="./doctor.html">Docteur</a></li>
+                            </h3>
+                            <h3>
+                                <li><a href="../pharmacie/pharmacien.html">Pharmacien</a></li>
+                            </h3>
                         </ul>
-                        
                     </div>
                     <div class="profile-photo">
-                        <img src="./images/profile-1.jpg" alt="">
+                        <img src="../images/profile-1.jpg" alt="">
                     </div>
                 </div>
             </div>
             <!--------------- END OF TOP ------------>
 
 
-           <div class="section-1">
+            <div class="section-1">
                 <h2>Last Patients</h2>
                 <div class="rows">
                     <div class="row">
                         <div class="profile-photo">
-                            <img src="./images/profile-2.jpg" alt="">
+                            <img src="../images/profile-2.jpg" alt="">
                         </div>
                         <div class="description">
                             <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
@@ -261,7 +257,7 @@
 
                     <div class="row">
                         <div class="profile-photo">
-                            <img src="./images/profile-3.jpg" alt="">
+                            <img src="../images/profile-3.jpg" alt="">
                         </div>
                         <div class="description">
                             <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
@@ -270,7 +266,7 @@
 
                     <div class="row">
                         <div class="profile-photo">
-                            <img src="./images/profile-4.jpg" alt="">
+                            <img src="../images/profile-4.jpg" alt="">
                         </div>
                         <div class="description">
                             <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
@@ -279,56 +275,67 @@
                 </div>
             </div>
             <a href="#" class="show-all-btn">Show All</a>
+
             <!--------------- END OF SECTION-1 ------------>
 
-            <div class="section-5">
-                <h2>Recent Sales</h2>
+            <div class="section-2">
+                <h2>Appointments Requests</h2>
 
 
                 <div class="item">
                     <div class="profile-photo">
-                        <img src="./images/profile-4.jpg" alt="">
+                        <img src="../images/profile-4.jpg" alt="">
                     </div>
                     <div class="description">
-                        <p><b>Mike Tyson</b> <br> 3 Products <br> 28 Jan 2022 &#8226 9 AM <br></p>
+                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
                     </div>
-                    <div class="primary">
-                        <h3>$100</h3>
+                    <div class="danger">
+                        <span class="material-icons-sharp">highlight_off</span>
+                    </div>
+                    <div class="success">
+                        <span class="material-icons-sharp">check_circle_outline</span>
                     </div>
                 </div>
 
-                 <div class="item">
+                <div class="item">
                     <div class="profile-photo">
-                        <img src="./images/profile-3.jpg" alt="">
+                        <img src="../images/profile-2.jpg" alt="">
                     </div>
                     <div class="description">
-                        <p><b>Mike Tyson</b> <br> 3 Products <br> 28 Jan 2022 &#8226 9 AM <br></p>
+                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
                     </div>
-                    <div class="primary">
-                        <h3>$100</h3>
+                    <div class="danger">
+                        <span class="material-icons-sharp">highlight_off</span>
+                    </div>
+                    <div class="success">
+                        <span class="material-icons-sharp">check_circle_outline</span>
                     </div>
                 </div>
 
-                 <div class="item">
+                <div class="item">
                     <div class="profile-photo">
-                        <img src="./images/profile-2.jpg" alt="">
+                        <img src="../images/profile-3.jpg" alt="">
                     </div>
                     <div class="description">
-                        <p><b>Mike Tyson</b> <br> 3 Products <br> 28 Jan 2022 &#8226 9 AM <br></p>
+                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
                     </div>
-                    <div class="primary">
-                        <h3>$100</h3>
+                    <div class="danger">
+                        <span class="material-icons-sharp">highlight_off</span>
+                    </div>
+                    <div class="success">
+                        <span class="material-icons-sharp">check_circle_outline</span>
                     </div>
                 </div>
 
 
             </div>
             <a href="#" class="show-all-btn">Show All</a>
+
         </div>
     </div>
 
 
-    <script src="./script.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 
 </html>

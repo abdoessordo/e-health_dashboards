@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="../style/style.css">
+
+        <!-- MATRIAL ICONS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="">
+                        <h2>e-<span class="danger">HEALTH</span></h2>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp"> close</span>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <a href="./patient.html">
+                        <span class="material-icons-sharp">dashboard</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="./patient_my_doctors.html">
+                        <span class="material-icons-sharp"> supervisor_account</span>
+                        <h3>My Doctors</h3>
+                    </a>
+                    <a href="./patient_consultations.html">
+                        <span class="material-icons-sharp">medication</span>
+                        <h3>Consultations</h3>
+                    </a>
+                    <a href="./patient_prescriptions.html">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3>Prescriptions</h3>
+                    </a>
+                    <a href="./patient_appointments.html">
+                        <span class="material-icons-sharp">event</span>
+                        <h3>Appointments</h3>
+                    </a>
+                    <a href="./patient_mutuelles.html" class="active">
+                        <span class="material-icons-sharp">health_and_safety</span>
+                        <h3>Insurances</h3>
+                    </a>
+                    <a href="../shared/messages.html">
+                        <span class="material-icons-sharp">mail_outline</span>
+                        <h3>Messages</h3>
+                        <span class="message-count">26</span>
+                    </a>
+                    <a href="./patient_reclamations.html">
+                        <span class="material-icons-sharp">report_gmailerrorred</span>
+                        <h3>Reclamation</h3>
+                    </a>
+                    <a href="../shared/profile_settings.html">
+                        <span class="material-icons-sharp">manage_accounts</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="../index.html">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </aside>
+            <!-- END OF ASIDE -->
+            <main>
+                <h1>Create Insurance</h1>
+
+                <div class="card">
+                    <h3 class="create-insurance-instructions">
+                        Insurances are based on a previous doctor consultation. <br><br>To create a new insurance you
+                        must first of all select an existing consultation. Search for an existing consultation using the
+                        search section to find the specefic doctor consultation. <br><br>If no consultation was found
+                        you have to visit a doctor to be able to create an insurance
+                    </h3>
+                </div>
+
+                <!--------------- END OF INSIGHTS ------------>
+
+                <div class="bottom consultations">
+                    <h2>Consultatinos</h2>
+                    <div class="card">
+                        <table id="insurances">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Created on</th>
+                                    <th>Created at</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td> 874986</td>
+                                    <td>25 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td>$1500</td>
+                                    <td class="warning">
+                                        <span class="material-icons-sharp"> watch_later</span>
+                                    </td>
+                                    <td class="primary">
+                                        <a class="see-detils-btn" href="">
+                                            <span class="material-icons-sharp"> open_in_new</span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr class="">
+                                    <td> 874986</td>
+                                    <td>25 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td>$1500</td>
+                                    <td class="warning">
+                                        <span class="material-icons-sharp"> watch_later</span>
+                                    </td>
+                                    <td class="primary">
+                                        <a class="see-detils-btn" href="">
+                                            <span class="material-icons-sharp"> open_in_new</span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td> 874986</td>
+                                    <td>25 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td>$1500</td>
+                                    <td class="warning">
+                                        <span class="material-icons-sharp"> watch_later</span>
+                                    </td>
+                                    <td class="primary">
+                                        <a class="see-detils-btn" href="">
+                                            <span class="material-icons-sharp"> open_in_new</span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td> 874986</td>
+                                    <td>25 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td>$1500</td>
+                                    <td class="warning">
+                                        <span class="material-icons-sharp"> watch_later</span>
+                                    </td>
+                                    <td class="primary">
+                                        <a class="see-detils-btn" href="">
+                                            <span class="material-icons-sharp"> open_in_new</span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td> 874986</td>
+                                    <td>25 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td>$1500</td>
+                                    <td class="success">
+                                        <span class="material-icons-sharp"> done</span>
+                                    </td>
+                                    <td class="primary">
+                                        <a class="see-detils-btn" href="">
+                                            <span class="material-icons-sharp"> open_in_new</span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td> 874986</td>
+                                    <td>25 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td>$1500</td>
+                                    <td class="success">
+                                        <span class="material-icons-sharp"> done</span>
+                                    </td>
+                                    <td class="primary">
+                                        <a class="see-detils-btn" href="">
+                                            <span class="material-icons-sharp"> open_in_new</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+            <!--------------- END OF MAIN ------------>
+            <div class="rigth">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    <div class="theme-toggler" id="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode </span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey, <b>Abdellah</b></p>
+                            <small class="role" onclick="dropMenu(this)">
+                                <small class="text-muted">Doctor</small>
+                                <span class="material-icons-sharp">expand_more</span>
+                            </small>
+                            <ul class="drop-down-content">
+                                <h3>
+                                    <li><a href="./patient.html">Patient</a></li>
+                                </h3>
+                                <h3>
+                                    <li><a href="../doctor/doctor.html">Docteur</a></li>
+                                </h3>
+                                <h3>
+                                    <li><a href="../pharmacie/pharmacien.html">Pharmacien</a></li>
+                                </h3>
+                            </ul>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="../images/profile-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--------------- END OF TOP ------------>
+
+            </div>
+        </div>
+
+
+        <script src="../script/script.js"></script>
+    </body>
+
+</html>
