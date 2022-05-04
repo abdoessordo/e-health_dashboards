@@ -204,12 +204,12 @@ aside .close {
 }
 
 .hide {
-    visibility: hidden !important;
+    display: none !important;
     z-index: -5;
 }
 
 /* ====================================================
-====================== SIDEBAR ======================== 
+======================Login========================
 ======================================================= */
 
 .landing form input::placeholder {
@@ -276,7 +276,7 @@ aside .close {
     align-items: center;
 }
 
-.landing .left main span {
+.landing .left main>span {
     margin: 0 auto;
     margin-bottom: 0;
     font-size: 4rem;
@@ -327,7 +327,7 @@ aside .close {
     text-align: center;
 }
 
-.landing .left main form .row.login-as span {
+.landing .left main form .row.login-as>span {
     margin: 0;
     font-size: 2rem;
     font-weight: normal;
@@ -369,6 +369,7 @@ aside .close {
 }
 
 
+.landing .left main form .next-section-btn,
 .landing .left main form button#login-btn {
     cursor: pointer;
     background-color: var(--color-primary);
@@ -381,6 +382,7 @@ aside .close {
     transition: all 300ms ease;
 }
 
+.landing .left main form .next-section-btn:hover,
 .landing .left main form button#login-btn:hover {
     background-color: transparent;
     color: var(--color-primary);
@@ -414,6 +416,14 @@ aside .close {
     font-size: 1rem;
 }
 
+.landing .left main form .calendar.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
 .landing .right {
     position: relative;
     z-index: 1;
@@ -440,6 +450,78 @@ aside .close {
     text-align: justify;
     font-weight: 400;
     text-shadow: var(--box-shadow);
+}
+
+/* ====================================================
+====================== REGISTER ======================== 
+======================================================= */
+
+.landing.register {
+    grid-template-columns: 56% auto;
+}
+
+.landing.register .left .title {
+    position: relative;
+    width: 100%;
+}
+
+.landing.register .left .title h1 {
+    text-align: center;
+}
+
+.landing.register .left .title>span {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.landing.register .left main form .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.landing.register .left main form .section:last-child .buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.landing.register .left main form .section:last-child .buttons-container>div {
+    background-color: var(--color-danger);
+    border: 0.2rem dashed var(--color-danger);
+}
+
+.landing.register .left main form .section:last-child .buttons-container>div:hover {
+    background-color: transparent;
+    color: var(--color-danger);
+}
+
+.landing .left main form .row.login-as {
+    position: relative;
+}
+
+.landing .left main form .row.login-as>div>span {
+
+    margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    color: var(--color-info-dark);
+    transition: all 300ms ease;
+}
+
+.landing .left main form .drop-down-content {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
 }
 
 
@@ -1512,6 +1594,23 @@ h3.create-insurance-instructions {
         transform: unset;
         height: 100%;
         padding-inline: 2rem;
+    }
+
+    .landing.register .left {
+        margin-bottom: 2rem;
+    }
+
+    .landing.register .left main form .section .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing.register .left main form .section .buttons-container>button,
+    .landing.register .left main form .section .buttons-container>div {
+        width: 100% !important;
+        padding-inline: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .landing .right {

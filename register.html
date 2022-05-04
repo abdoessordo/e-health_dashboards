@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <link rel="stylesheet" href="./style/style.css">
+        <title>Document</title>
+    </head>
+    <body class="briclole">
+
+        <div class="landing register">
+
+            <div class="right">
+                <div class="welcome">
+                    <h1>
+                        Welcome to your private space.
+                    </h1>
+                    <h2>
+                        An integrated information system that allows the implementation of new
+                        health management methods.
+                    </h2>
+                </div>
+            </div>
+            <div class="left">
+                <aside>
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="">
+                        <h2>e-<span class="danger">HEALTH</span></h2>
+                    </div>
+                </aside>
+                <main>
+                    <div class="card">
+                        <div class="top">
+                            <div class="title">
+                                <h1>Register</h1>
+                                <span class="material-icons-sharp">
+                                    edit
+                                </span>
+                            </div>
+                            <form action="" method="">
+                                <div class="section hide">
+                                    <div class="row">
+                                        <input type="text" placeholder="Enter CIN" name="username" required >
+                                    </div>
+
+                                    <div class="row">
+                                        <input type="email" placeholder="Enter Email" name="email" required>
+                                    </div>
+
+                                    <div class="row">
+                                        <input type="password" placeholder="Enter Password" name="password1" required>
+                                    </div>
+
+                                    <div class="row">
+                                        <input type="password" placeholder="Confirm Password" name="password2" required>
+                                    </div>
+
+
+                                    <div class="next-section-btn" type="submit" onclick="next_section('next')">
+                                        <h2>Next</h2>
+                                    </div>
+                                    <label id="error_label" class="hide"></label>
+                                </div>
+
+                                <div class="section">
+                                    <div class="row">
+                                        <input type="text" placeholder="First Name" name="first_name" required>
+                                    </div>
+
+                                    <div class="row">
+                                        <input type="text" placeholder="Last Name" name="last_name" required>
+                                    </div>
+
+                                    <!-- Choose Sexe -->
+                                    <div class="row login-as">
+                                        <div class="" onclick="toggle_login_as_menu(this, 'drop-down')">
+                                            <input id="sex" type="text" name="sexe" hidden required>
+                                            <h3 class="text-muted">Gender</h3>
+                                            <span class="material-icons-sharp">expand_more</span>
+                                        </div>
+                                        <ul class="drop-down-content hide" id="login-as-menu">
+                                            <h3>
+                                                <li onclick="set_login_as_value(this, 'M')">Male</li>
+                                            </h3>
+                                            <h3>
+                                                <li onclick="set_login_as_value(this, 'F')">Female</li>
+                                            </h3>
+                                        </ul>
+                                    </div>
+
+
+                                    <!-- Birthdate -->
+                                    <div class="row login-as">
+                                        <div id="login-as-input" onclick="toggle_login_as_menu(this, 'birthdate')">
+                                            <input id="birthdate" type="date" name="date" hidden required>
+                                            <h3 id="birthdate_placeholder" class="text-muted">Birthdate</h3>
+                                            <span class="material-icons-sharp">calendar_today</span>
+                                        </div>
+                                        <div class="calendar card hide">
+                                            <div class="calendar-header">
+                                                <h1 class="month-picker" id="month-picker">February</h1>
+                                                <div class="year-picker">
+                                                    <span class="year-change" id="prev-year">
+                                                        <pre><</pre>
+                                                    </span>
+                                                    <h1 id="year">2021</h1>
+                                                    <span class="year-change" id="next-year">
+                                                        <pre>></pre>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="calendar-body">
+                                                <div class="calendar-week-day">
+                                                    <h3>Sun</h3>
+                                                    <h3>Mon</h3>
+                                                    <h3>Tue</h3>
+                                                    <h3>Wed</h3>
+                                                    <h3>Thu</h3>
+                                                    <h3>Fri</h3>
+                                                    <h3>Sat</h3>
+                                                </div>
+                                                <div class="calendar-days"></div>
+                                            </div>
+
+                                            <div class="month-list"></div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="row">
+                                        <input type="tel" inputmode="numeric" pattern="[-+]?[0-9]*[.,]?[0-9]+"
+                                            placeholder="Phone Number" name="phone" required>
+                                    </div>
+
+                                    <div class="row">
+                                        <input type="text" placeholder="City" name="ville" required>
+                                    </div>
+
+                                    <div class="row">
+                                        <input type="street" placeholder="Adresse" name="adresse" required>
+                                    </div>
+
+
+                                    <div class="buttons-container">
+                                        <div class="next-section-btn" type="submit" onclick="next_section('back')">
+                                            <h2>Back</h2>
+                                        </div>
+                                        <button id="login-btn" type="submit">
+                                            <h2>Register</h2>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                            </form>
+                            <h3 class="text-muted">
+                                By creating an account, you agree and accept our <a class="text-muted"
+                                    href="#">Terms</a> and <a class="text-muted" href="#">Privacy Policy</a>
+                            </h3>
+                        </div>
+                        <div class="bottom">
+                            <h3>
+                                Already Have an Account? <a href="#">Log in</a>.
+                            </h3>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+
+        </div>
+
+        <script src="./script/login.js"></script>
+        <script src="./script/calendar.js"></script>
+    </body>
+</html>
