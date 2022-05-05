@@ -205,7 +205,11 @@ aside .close {
 
 .hide {
     display: none !important;
-    z-index: -5;
+
+}
+
+.landing .left main form ul.hide {
+    visibility: hidden;
 }
 
 /* ====================================================
@@ -274,6 +278,15 @@ aside .close {
     flex-direction: column;
     width: 100%;
     align-items: center;
+}
+
+.landing .left main .top>span {
+    margin: 0 auto;
+    margin-bottom: 0;
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--color-primary);
+
 }
 
 .landing .left main>span {
@@ -418,7 +431,7 @@ aside .close {
 
 .landing .left main form .calendar.card {
     position: absolute;
-    top: 0;
+    top: 22rem;
     left: 0;
     width: 100%;
     z-index: 50;
@@ -517,11 +530,17 @@ aside .close {
     transition: all 300ms ease;
 }
 
+.landing.register .left main form .drop-down-content,
 .landing .left main form .drop-down-content {
     position: absolute;
-    top: 64px;
+    top: 19.5rem;
     left: 0;
     width: 100%;
+}
+
+.landing.register .left main form .drop-down-content {
+    top: 64px !important;
+
 }
 
 
@@ -1556,8 +1575,26 @@ h3.create-insurance-instructions {
         position: absolute;
     }
 
+    .landing.register,
     .landing {
-        grid-template-columns: 60% auto;
+        grid-template-columns: 40% auto;
+    }
+
+    .landing.register .left aside {
+        margin-bottom: 55rem;
+    }
+
+    .landing.register .left main form .section .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing.register .left main form .section .buttons-container>button,
+    .landing.register .left main form .section .buttons-container>div {
+        width: 100% !important;
+        padding-inline: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .landing .right .welcome {
@@ -1600,18 +1637,6 @@ h3.create-insurance-instructions {
         margin-bottom: 2rem;
     }
 
-    .landing.register .left main form .section .buttons-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .landing.register .left main form .section .buttons-container>button,
-    .landing.register .left main form .section .buttons-container>div {
-        width: 100% !important;
-        padding-inline: 0;
-        display: flex;
-        justify-content: center;
-    }
 
     .landing .right {
         display: none;

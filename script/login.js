@@ -68,8 +68,11 @@ window.addEventListener("click", e => {
     
     let calendar_inpt = document.querySelector(".landing.register #login-as-input #birthdate_placeholder")
 
-    if (e.target === calendar_inpt || e.target === calendar || calendar_childs.includes(e.target)) {
-        console.log(e.target);
+    let calendar_icon = document.querySelector(".landing.register #login-as-input span")
+
+    console.log(calendar_icon);
+
+    if (e.target === calendar_inpt || e.target === calendar || Array.from(calendar_childs).includes(e.target) || e.target === calendar_icon) {
     } else {        
         calendar.classList.add('hide')
     }
