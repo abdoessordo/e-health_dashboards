@@ -93,6 +93,11 @@
                         <table id="insurances">
                             <thead>
                                 <tr>
+                                    <th>
+                                        <span class="material-icons-sharp checkbox">
+                                            check_box_outline_blank
+                                        </span>
+                                    </th>
                                     <th>ID</th>
                                     <th>Created on</th>
                                     <th>Created at</th>
@@ -103,7 +108,10 @@
                             </thead>
 
                             <tbody>
-                                <tr>
+                                <tr visite_id="1">
+                                    <td>
+                                        <span class="material-icons-sharp checkbox">check_box_outline_blank</span>
+                                    </td>
                                     <td> 874986</td>
                                     <td>25 Mai 2022</td>
                                     <td>01:00 PM</td>
@@ -118,7 +126,12 @@
                                     </td>
                                 </tr>
 
-                                <tr class="">
+                                <tr visite_id="2">
+                                    <td>
+                                        <span class="material-icons-sharp checkbox">
+                                            check_box_outline_blank
+                                        </span>
+                                    </td>
                                     <td> 874986</td>
                                     <td>25 Mai 2022</td>
                                     <td>01:00 PM</td>
@@ -133,7 +146,12 @@
                                     </td>
                                 </tr>
 
-                                <tr>
+                                <tr visite_id="3">
+                                    <td>
+                                        <span class="material-icons-sharp checkbox">
+                                            check_box_outline_blank
+                                        </span>
+                                    </td>
                                     <td> 874986</td>
                                     <td>25 Mai 2022</td>
                                     <td>01:00 PM</td>
@@ -148,7 +166,12 @@
                                     </td>
                                 </tr>
 
-                                <tr>
+                                <tr visite_id="4">
+                                    <td>
+                                        <span class="material-icons-sharp checkbox">
+                                            check_box_outline_blank
+                                        </span>
+                                    </td>
                                     <td> 874986</td>
                                     <td>25 Mai 2022</td>
                                     <td>01:00 PM</td>
@@ -163,7 +186,12 @@
                                     </td>
                                 </tr>
 
-                                <tr>
+                                <tr visite_id="5">
+                                    <td>
+                                        <span class="material-icons-sharp checkbox">
+                                            check_box_outline_blank
+                                        </span>
+                                    </td>
                                     <td> 874986</td>
                                     <td>25 Mai 2022</td>
                                     <td>01:00 PM</td>
@@ -178,7 +206,12 @@
                                     </td>
                                 </tr>
 
-                                <tr>
+                                <tr visite_id="6">
+                                    <td>
+                                        <span class="material-icons-sharp checkbox">
+                                            check_box_outline_blank
+                                        </span>
+                                    </td>
                                     <td> 874986</td>
                                     <td>25 Mai 2022</td>
                                     <td>01:00 PM</td>
@@ -195,6 +228,12 @@
                             </tbody>
                         </table>
                     </div>
+                    <form id="create_insurance" action="">
+                        <input type="text" id="selected_visites" name="selected_visites" hidden required>
+                        <button id="login-btn" type="submit">
+                            <h2>Create</h2>
+                        </button>
+                    </form>
                 </div>
             </main>
             <!--------------- END OF MAIN ------------>
@@ -238,6 +277,7 @@
 
 
         <script src="../script/script.js"></script>
+        <script src="../script/create_insurance.js"></script>
     </body>
 
 </html>

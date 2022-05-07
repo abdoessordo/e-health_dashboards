@@ -381,9 +381,9 @@ aside .close {
     text-decoration: none;
 }
 
-
+main form#create_insurance button,
 .landing .left main form .next-section-btn,
-.landing .left main form button#login-btn {
+.landing .left main form button#login-btn{
     cursor: pointer;
     background-color: var(--color-primary);
     width: unset;
@@ -395,12 +395,18 @@ aside .close {
     transition: all 300ms ease;
 }
 
+main form#create_insurance button{
+    float: right;
+}
+
+main form#create_insurance button:hover,
 .landing .left main form .next-section-btn:hover,
 .landing .left main form button#login-btn:hover {
     background-color: transparent;
     color: var(--color-primary);
 }
 
+main form#create_insurance button h2,
 .landing .left main form button#login-btn h2 {
     margin: 0;
     padding: 0;
@@ -1002,6 +1008,12 @@ main form.add-form .form-row div:last-child {
 main form#search-doc .submit-btn {
     float: left;
 }
+
+main table#insurances thead th:first-child > span,
+main table#insurances tbody td:first-child > span{
+    cursor: pointer;
+}
+
 
 /* ====================================================
 ====================== RIGTH ==========================
@@ -1812,4 +1824,14 @@ h3.create-insurance-instructions {
         position: relative;
         margin-top: 3rem;
     }
+
+    main form#create_insurance{
+        display: flex;
+        justify-content: center;
+    }
+
+    main form#create_insurance button{
+        float: unset;
+    }
+
 }
