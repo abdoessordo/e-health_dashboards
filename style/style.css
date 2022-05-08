@@ -383,7 +383,7 @@ aside .close {
 
 main form#create_insurance button,
 .landing .left main form .next-section-btn,
-.landing .left main form button#login-btn{
+.landing .left main form button#login-btn {
     cursor: pointer;
     background-color: var(--color-primary);
     width: unset;
@@ -395,7 +395,7 @@ main form#create_insurance button,
     transition: all 300ms ease;
 }
 
-main form#create_insurance button{
+main form#create_insurance button {
     float: right;
 }
 
@@ -1009,8 +1009,8 @@ main form#search-doc .submit-btn {
     float: left;
 }
 
-main table#insurances thead th:first-child > span,
-main table#insurances tbody td:first-child > span{
+main table#insurances thead th:first-child>span,
+main table#insurances tbody td:first-child>span {
     cursor: pointer;
 }
 
@@ -1021,13 +1021,14 @@ main table#insurances tbody td:first-child > span{
 
 .rigth {
     margin-top: 1.4rem;
+    position: fixed;
+    right: 2rem;
 }
 
 .rigth .top {
     display: flex;
     justify-content: end;
     gap: 2rem;
-    position: fixed;
     right: 2.8rem;
     z-index: 90;
 }
@@ -1529,7 +1530,17 @@ h3.create-insurance-instructions {
     width: 30%;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    animation: animate 300ms ease;
+    }
 
+    @keyframes animate {
+        0% {
+            transform: scale(0%);
+        }
+
+    100% {
+        transform: scale(100%);
+    }
 }
 
 .popup-holder .card .close-btn {
@@ -1552,6 +1563,20 @@ h3.create-insurance-instructions {
 
 .popup-holder .card form .form-row input {
     width: 100%;
+}
+
+.popup-holder .card .visit_confirmation {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+
+.popup-holder .card .visit_confirmation .cancel>div,
+.popup-holder .card .visit_confirmation .accept>div {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
 }
 
 /* ====================================================
@@ -1662,6 +1687,10 @@ h3.create-insurance-instructions {
 
     .landing .left main .bottom {
         all: unset;
+    }
+
+    .rigth {
+        position: unset;
     }
 
 }
@@ -1872,12 +1901,12 @@ h3.create-insurance-instructions {
         margin-top: 3rem;
     }
 
-    main form#create_insurance{
+    main form#create_insurance {
         display: flex;
         justify-content: center;
     }
 
-    main form#create_insurance button{
+    main form#create_insurance button {
         float: unset;
     }
 

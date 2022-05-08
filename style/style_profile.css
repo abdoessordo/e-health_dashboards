@@ -373,6 +373,11 @@ main .insights>div.profile .rigth {
     margin-top: 0;
     /* display: grid; */
     /* grid-template-columns: 1fr; */
+    margin-top: 0;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    position: relative;
+    right: unset;
 }
 
 #edit span {
@@ -824,21 +829,23 @@ main table tbody tr:last-child td {
 
 .rigth {
     margin-top: 1.4rem;
+    position: fixed;
+    right: 2rem;
+    }
+
+    .rigth.settings {
+        position: relative;
+        right: unset;
 }
 
 .rigth .top {
     display: flex;
     justify-content: end;
     gap: 2rem;
-    position: fixed;
     right: 2.8rem;
     z-index: 90;
 }
 
-.rigth .section-1:nth-child(2),
-.rigth .section-3 {
-    margin-top: 4rem !important;
-}
 
 .rigth .top button {
     display: none;
@@ -1082,13 +1089,25 @@ main table tbody tr:last-child td {
     align-items: center;
     transition: all 300ms ease;
     z-index: 100;
+    animation: animate 300ms ease;
+
 }
 
 .popup-holder .card {
     width: 30%;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    animation: animate 300ms ease;
+    }
 
+    @keyframes animate {
+        0% {
+            transform: scale(0%);
+        }
+
+    100% {
+        transform: scale(100%);
+    }
 }
 
 .popup-holder .card .close-btn {
@@ -1182,6 +1201,9 @@ main table tbody tr:last-child td {
     main #form-holder-trait.card,
     main #form-holder-med.card {
         position: absolute;
+    }
+    .rigth {
+        position: unset;
     }
 }
 

@@ -1,341 +1,368 @@
 <!DOCTYPE html>
 <html lang="en" translate="no">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="../style/style.css">
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="../style/style.css">
 
-    <!-- MATRIAL ICONS -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <!-- MATRIAL ICONS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 
-    <title>Document</title>
-</head>
+        <title>Document</title>
+    </head>
 
-<body>
-    <div class="container">
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <img src="../images/logo.png" alt="">
-                    <h2>e-<span class="danger">HEALTH</span></h2>
-                </div>
-                <div class="close" id="close-btn">
-                    <span class="material-icons-sharp"> close</span>
-                </div>
-            </div>
-
-            <div class="sidebar">
-                <a href="./doctor.html" class="active">
-                    <span class="material-icons-sharp">dashboard</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="./doctor_all_patient.html">
-                    <span class="material-icons-sharp"> people_alt</span>
-                    <h3>My Patients</h3>
-                </a>
-                <a href="./doctor_consultations.html">
-                    <span class="material-icons-sharp">medication</span>
-                    <h3>Consultations</h3>
-                </a>
-                <a href="./doctor_appointments.html">
-                    <span class="material-icons-sharp">event</span>
-                    <h3>Appointments</h3>
-                </a>
-                <a href="../shared/messages.html">
-                    <span class="material-icons-sharp">mail_outline</span>
-                    <h3>Messages</h3>
-                    <span class="message-count">26</span>
-                </a>
-                <a href="./doctor_reclamations.html">
-                    <span class="material-icons-sharp">report_gmailerrorred</span>
-                    <h3>Reclamation</h3>
-                </a>
-                <a href="../shared/profile_settings.html">
-                    <span class="material-icons-sharp">manage_accounts</span>
-                    <h3>Settings</h3>
-                </a>
-                <a href="../index.html">
-                    <span class="material-icons-sharp">logout</span>
-                    <h3>Logout</h3>
-                </a>
-            </div>
-        </aside>
-        <!-- END OF ASIDE -->
-        <main>
-            <h1>Dashboard</h1>
-
-            <div class="insights dashboard">
-                <div class="card">
-                    <span class="material-icons-sharp">people_alt</span>
-                    <div class="middle">
-
-                        <h3>Total Patients</h3>
-                        <h1>120</h1>
-
+    <body>
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="">
+                        <h2>e-<span class="danger">HEALTH</span></h2>
                     </div>
-                    <small class="text-muted">
-                        Last Week
-                    </small>
-                </div>
-                <!--------------- END OF CARD 1 ------------>
-
-                <div class="card">
-                    <span class="material-icons-sharp">event</span>
-                    <div class="middle">
-                        <h3>Appointments</h3>
-                        <h1>56</h1>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp"> close</span>
                     </div>
-                    <small class="text-muted">
-                        Last Week
-                    </small>
                 </div>
-                <!--------------- END OF CARD 2 ------------>
 
-                <div class="card">
-                    <span class="material-icons-sharp">phone_in_talk</span>
-                    <div class="middle">
-                        <h3>Phone Calls</h3>
-                        <h1>356</h1>
-                    </div>
-                    <small class="text-muted">
-                        Last Week
-                    </small>
-                </div>
-                <!--------------- END OF CARD 3 ------------>
-                <div class="card">
-                    <span class="material-icons-sharp">medication</span>
-                    <div class="middle">
+                <div class="sidebar">
+                    <a href="./doctor.html" class="active">
+                        <span class="material-icons-sharp">dashboard</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="./doctor_all_patient.html">
+                        <span class="material-icons-sharp"> people_alt</span>
+                        <h3>My Patients</h3>
+                    </a>
+                    <a href="./doctor_consultations.html">
+                        <span class="material-icons-sharp">medication</span>
                         <h3>Consultations</h3>
-                        <h1>84</h1>
-                    </div>
-                    <small class="text-muted">
-                        Last Week
-                    </small>
+                    </a>
+                    <a href="./doctor_appointments.html">
+                        <span class="material-icons-sharp">event</span>
+                        <h3>Appointments</h3>
+                    </a>
+                    <a href="../shared/messages.html">
+                        <span class="material-icons-sharp">mail_outline</span>
+                        <h3>Messages</h3>
+                        <span class="message-count">26</span>
+                    </a>
+                    <a href="./doctor_reclamations.html">
+                        <span class="material-icons-sharp">report_gmailerrorred</span>
+                        <h3>Reclamation</h3>
+                    </a>
+                    <a href="../shared/profile_settings.html">
+                        <span class="material-icons-sharp">manage_accounts</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="../index.html">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Logout</h3>
+                    </a>
                 </div>
-                <!--------------- END OF CARD 4 ------------>
-                <div class="card">
-                    <span class="material-icons-sharp">add </span>
-                </div>
-                <!--------------- END OF CARD 5 ------------>
-            </div>
-            <!--------------- END OF INSIGHTS ------------>
+            </aside>
+            <!-- END OF ASIDE -->
+            <main>
+                <h1>Dashboard</h1>
 
-            <div class="bottom">
-                <h2>My appointments</h2>
-               <div class="card">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Patient Name</th>
-                                <th>Date</th>
-                                <th>Time</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
+                <div class="insights dashboard">
+                    <div class="card">
+                        <span class="material-icons-sharp">people_alt</span>
+                        <div class="middle">
 
-                        <tbody>
-                            <tr>
-                                <td>Salah Eddine Belhiak</td>
-                                <td>25 Mai 2022</td>
-                                <td>01:00 PM</td>
-                                <td class="warning">
-                                    <span class="material-icons-sharp"> watch_later</span>
-                                </td>
-                            </tr>
+                            <h3>Total Patients</h3>
+                            <h1>120</h1>
 
-                            <tr>
-                                <td>Salah Eddine Belhiak</td>
-                                <td>25 Mai 2022</td>
-                                <td>01:00 PM</td>
-                                <td class="warning">
-                                    <span class="material-icons-sharp"> watch_later</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Essordo Abdellah</td>
-                                <td>10 Mai 2022</td>
-                                <td>01:00 PM</td>
-                                <td class="success">
-                                    <span class="material-icons-sharp"> done</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Essordo Abdellah</td>
-                                <td>10 Mai 2022</td>
-                                <td>01:00 PM</td>
-                                <td class="success">
-                                    <span class="material-icons-sharp"> done</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Essordo Abdellah</td>
-                                <td>10 Mai 2022</td>
-                                <td>01:00 PM</td>
-                                <td class="success">
-                                    <span class="material-icons-sharp"> done</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Essordo Abdellah</td>
-                                <td>10 Mai 2022</td>
-                                <td>01:00 PM</td>
-                                <td class="success">
-                                    <span class="material-icons-sharp"> done</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Essordo Abdellah</td>
-                                <td>10 Mai 2022</td>
-                                <td>01:00 PM</td>
-                                <td class="success">
-                                    <span class="material-icons-sharp"> done</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                            </table>
-               </div>
-                <a class="show-all-btn" href="./doctor_appointments.html">Show All</a>
-            </div>
-        </main>
-        <!--------------- END OF MAIN ------------>
-        <div class="rigth">
-            <div class="top">
-                <button id="menu-btn">
-                    <span class="material-icons-sharp">menu</span>
-                </button>
-                <div class="theme-toggler" id="theme-toggler">
-                    <span class="material-icons-sharp active">light_mode </span>
-                    <span class="material-icons-sharp">dark_mode</span>
-                </div>
-                <div class="profile">
-                    <div class="info">
-                        <p>Hey, <b>Abdellah</b></p>
-                        <small class="role" onclick="dropMenu(this)">
-                            <small class="text-muted">Doctor</small>
-                            <span class="material-icons-sharp">expand_more</span>
+                        </div>
+                        <small class="text-muted">
+                            Last Week
                         </small>
-                        <ul class="drop-down-content">
-                            <h3>
-                                <li><a href="../patient/patient.html">Patient</a></li>
-                            </h3>
-                            <h3>
-                                <li><a href="./doctor.html">Docteur</a></li>
-                            </h3>
-                            <h3>
-                                <li><a href="../pharmacie/pharmacien.html">Pharmacien</a></li>
-                            </h3>
-                        </ul>
                     </div>
-                    <div class="profile-photo">
-                        <img src="../images/profile-1.jpg" alt="">
+                    <!--------------- END OF CARD 1 ------------>
+
+                    <div class="card">
+                        <span class="material-icons-sharp">event</span>
+                        <div class="middle">
+                            <h3>Appointments</h3>
+                            <h1>56</h1>
+                        </div>
+                        <small class="text-muted">
+                            Last Week
+                        </small>
+                    </div>
+                    <!--------------- END OF CARD 2 ------------>
+
+                    <div class="card">
+                        <span class="material-icons-sharp">phone_in_talk</span>
+                        <div class="middle">
+                            <h3>Phone Calls</h3>
+                            <h1>356</h1>
+                        </div>
+                        <small class="text-muted">
+                            Last Week
+                        </small>
+                    </div>
+                    <!--------------- END OF CARD 3 ------------>
+                    <div class="card">
+                        <span class="material-icons-sharp">medication</span>
+                        <div class="middle">
+                            <h3>Consultations</h3>
+                            <h1>84</h1>
+                        </div>
+                        <small class="text-muted">
+                            Last Week
+                        </small>
+                    </div>
+                    <!--------------- END OF CARD 4 ------------>
+                    <div class="card">
+                        <span class="material-icons-sharp">add </span>
+                    </div>
+                    <!--------------- END OF CARD 5 ------------>
+                </div>
+                <!--------------- END OF INSIGHTS ------------>
+
+                <div class="bottom">
+                    <h2>My appointments</h2>
+                    <div class="card">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Patient Name</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Salah Eddine Belhiak</td>
+                                    <td>25 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td class="warning">
+                                        <span class="material-icons-sharp"> watch_later</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Salah Eddine Belhiak</td>
+                                    <td>25 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td class="warning">
+                                        <span class="material-icons-sharp"> watch_later</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Essordo Abdellah</td>
+                                    <td>10 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td class="success">
+                                        <span class="material-icons-sharp"> done</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Essordo Abdellah</td>
+                                    <td>10 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td class="success">
+                                        <span class="material-icons-sharp"> done</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Essordo Abdellah</td>
+                                    <td>10 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td class="success">
+                                        <span class="material-icons-sharp"> done</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Essordo Abdellah</td>
+                                    <td>10 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td class="success">
+                                        <span class="material-icons-sharp"> done</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Essordo Abdellah</td>
+                                    <td>10 Mai 2022</td>
+                                    <td>01:00 PM</td>
+                                    <td class="success">
+                                        <span class="material-icons-sharp"> done</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a class="show-all-btn" href="./doctor_appointments.html">Show All</a>
+                </div>
+                <div class="popup-holder pharmacy">
+                    <div class="card">
+                        <div class="close-btn">
+                            <span class="material-icons-sharp">
+                                close
+                            </span>
+                        </div>
+                        <h2>New Patient</h2>
+                        <small class="text-muted">
+                            A new patient: <b>{{patient.name}}</b> has checked-in {{visit.created_at}}.
+                        </small>
+                        <div class="visit_confirmation">
+                            <div class="cancel">
+                                <div class="danger">
+                                    <span class="material-icons-sharp">highlight_off</span>
+                                    <h3>Cancel</h3>
+                                </div>
+                            </div>
+                            <div class="accept">
+                                <div class="success">
+                                    <span class="material-icons-sharp">check_circle_outline</span>
+                                    <h3>Accept</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--------------- END OF TOP ------------>
-
-
-            <div class="section-1">
-                <h2>Last Patients</h2>
-                <div class="rows">
-                    <div class="row">
-                        <div class="profile-photo">
-                            <img src="../images/profile-2.jpg" alt="">
+            </main>
+            <!--------------- END OF MAIN ------------>
+            <div class="rigth">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    <div class="theme-toggler" id="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode </span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey, <b>Abdellah</b></p>
+                            <small class="role" onclick="dropMenu(this)">
+                                <small class="text-muted">Doctor</small>
+                                <span class="material-icons-sharp">expand_more</span>
+                            </small>
+                            <ul class="drop-down-content">
+                                <h3>
+                                    <li><a href="../patient/patient.html">Patient</a></li>
+                                </h3>
+                                <h3>
+                                    <li><a href="./doctor.html">Docteur</a></li>
+                                </h3>
+                                <h3>
+                                    <li><a href="../pharmacie/pharmacien.html">Pharmacien</a></li>
+                                </h3>
+                            </ul>
                         </div>
-                        <div class="description">
-                            <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
+                        <div class="profile-photo">
+                            <img src="../images/profile-1.jpg" alt="">
                         </div>
                     </div>
+                </div>
+                <!--------------- END OF TOP ------------>
 
-                    <div class="row">
-                        <div class="profile-photo">
-                            <img src="../images/profile-3.jpg" alt="">
+
+                <div class="section-1">
+                    <h2>Last Patients</h2>
+                    <div class="rows">
+                        <div class="row">
+                            <div class="profile-photo">
+                                <img src="../images/profile-2.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
+                            </div>
                         </div>
-                        <div class="description">
-                            <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
+
+                        <div class="row">
+                            <div class="profile-photo">
+                                <img src="../images/profile-3.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="profile-photo">
+                                <img src="../images/profile-4.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <a href="#" class="show-all-btn">Show All</a>
 
-                    <div class="row">
+                <!--------------- END OF SECTION-1 ------------>
+
+                <div class="section-2">
+                    <h2>Appointments Requests</h2>
+
+
+                    <div class="item">
                         <div class="profile-photo">
                             <img src="../images/profile-4.jpg" alt="">
                         </div>
                         <div class="description">
-                            <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM - 11 AM</p>
+                            <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
+                        </div>
+                        <div class="danger">
+                            <span class="material-icons-sharp">highlight_off</span>
+                        </div>
+                        <div class="success">
+                            <span class="material-icons-sharp">check_circle_outline</span>
                         </div>
                     </div>
+
+                    <div class="item">
+                        <div class="profile-photo">
+                            <img src="../images/profile-2.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
+                        </div>
+                        <div class="danger">
+                            <span class="material-icons-sharp">highlight_off</span>
+                        </div>
+                        <div class="success">
+                            <span class="material-icons-sharp">check_circle_outline</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="profile-photo">
+                            <img src="../images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
+                        </div>
+                        <div class="danger">
+                            <span class="material-icons-sharp">highlight_off</span>
+                        </div>
+                        <div class="success">
+                            <span class="material-icons-sharp">check_circle_outline</span>
+                        </div>
+                    </div>
+
+
                 </div>
-            </div>
-            <a href="#" class="show-all-btn">Show All</a>
-
-            <!--------------- END OF SECTION-1 ------------>
-
-            <div class="section-2">
-                <h2>Appointments Requests</h2>
-
-
-                <div class="item">
-                    <div class="profile-photo">
-                        <img src="../images/profile-4.jpg" alt="">
-                    </div>
-                    <div class="description">
-                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
-                    </div>
-                    <div class="danger">
-                        <span class="material-icons-sharp">highlight_off</span>
-                    </div>
-                    <div class="success">
-                        <span class="material-icons-sharp">check_circle_outline</span>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="profile-photo">
-                        <img src="../images/profile-2.jpg" alt="">
-                    </div>
-                    <div class="description">
-                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
-                    </div>
-                    <div class="danger">
-                        <span class="material-icons-sharp">highlight_off</span>
-                    </div>
-                    <div class="success">
-                        <span class="material-icons-sharp">check_circle_outline</span>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="profile-photo">
-                        <img src="../images/profile-3.jpg" alt="">
-                    </div>
-                    <div class="description">
-                        <p><b>Mike Tyson</b> <br> 28 Jan 2022 &#8226 9 AM <br></p>
-                    </div>
-                    <div class="danger">
-                        <span class="material-icons-sharp">highlight_off</span>
-                    </div>
-                    <div class="success">
-                        <span class="material-icons-sharp">check_circle_outline</span>
-                    </div>
-                </div>
-
+                <a href="#" class="show-all-btn">Show All</a>
 
             </div>
-            <a href="#" class="show-all-btn">Show All</a>
-
         </div>
-    </div>
 
 
-    <script src="../script/script.js"></script>
-</body>
+        <script src="../script/script.js"></script>
+    </body>
 
 </html>
