@@ -305,6 +305,7 @@ main .card .middle {
     text-align: center;
 }
 
+.rigth .card,
 main .card {
     background: var(--color-white);
     padding: var(--card-padding);
@@ -483,6 +484,7 @@ main .insights.settings>div .row .description h4 {
     cursor: pointer;
 }
 
+.rigth .popup-holder form,
 .rigth .section-1 form,
 main .insights.settings>div form {
     margin-top: 2rem;
@@ -497,8 +499,11 @@ main .insights.settings>div form {
     margin-bottom: 1rem;
 }
 
+.rigth .popup-holder form .form-row,
 .rigth .section-1 form .form-row {
-    grid-template-columns: 5rem auto 5rem;
+    display: grid;
+    grid-template-columns: 11rem auto 5rem;
+
 
 }
 
@@ -594,10 +599,20 @@ main form.add-form button {
     margin-top: 2rem;
 }
 
+
+
 .submit-btn-holder {
     position: absolute;
     bottom: 5rem;
     right: 1rem;
+}
+
+.popup-holder button {
+    float: right;
+}
+
+.popup-holder button .submit-btn-holder {
+    position: unset;
 }
 
 .bottom .table-title a.submit-btn-holder {
@@ -635,6 +650,27 @@ main .insights.settings .section-1 .privacy-settings .row,
 .rigth .section-1 .privacy-settings .row {
     display: grid;
     grid-template-columns: auto 5rem;
+}
+
+.rigth .row.status {
+    align-items: center;
+}
+
+.rigth .edit-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translateY(-50%);
+}
+
+.rigth .edit-button span {
+    cursor: pointer;
+}
+
+
+.rigth .row.status div:last-child {
+    display: flex;
+    align-items: center;
 }
 
 main .insights.settings .section-1 .privacy-settings .row .description h3,
@@ -800,7 +836,7 @@ main table tbody tr:last-child td {
 }
 
 .rigth .section-1:nth-child(2),
-.rigth .section-3{
+.rigth .section-3 {
     margin-top: 4rem !important;
 }
 
@@ -897,7 +933,7 @@ main table tbody tr:last-child td {
 ====================== SECTION-1 ======================
 ======================================================= */
 .section-1,
-.section-1{
+.section-1 {
     margin-top: 1rem;
 }
 

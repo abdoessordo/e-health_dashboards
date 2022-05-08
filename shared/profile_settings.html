@@ -229,8 +229,8 @@
                 <!--------------- END OF INSIGHTS ------------>
             </main>
             <!--------------- END OF MAIN ------------>
-            <div class="rigth">
-                <div class="top">
+            <div class="rigth settings">
+                <div class="top ">
                     <button id="menu-btn">
                         <span class="material-icons-sharp">menu</span>
                     </button>
@@ -267,6 +267,11 @@
                 <div id="become-doctor" class="section-1">
                     <h2>Become a Doctor</h2>
                     <div class="rows privacy-settings">
+                        <div class="edit-button primary">
+                            <span class="material-icons-sharp">
+                                edit
+                            </span>
+                        </div>
                         <div class="row">
                             <div class="description">
                                 <h3>Activate Doctor</h3>
@@ -275,37 +280,105 @@
                                 </small>
                             </div>
                             <label class="switch">
-                                <input id="become-doctor-btn" onclick="show_form(this.id)" name="" type="checkbox">
+                                <input id="become-doctor-btn" name="" type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </div>
-                        <form action="#" class="become-doctor-form hide-from">
+                        <div class="row status">
+                            <div class="label">
+                                <h3>Status</h3>
+                            </div>
+                            <div class="warning">
+                                <span class="material-icons-sharp"> watch_later</span>
+                                <h3>Pending</h3>
+                                </d>
+                            </div>
+                        </div>
+
+                        <div class="row status">
+                            <div class="label">
+                                <h3>Status</h3>
+                            </div>
+                            <div class="success">
+                                <span class="material-icons-sharp"> done</span>
+                                <h3>Active</h3>
+                                </d>
+                            </div>
+                        </div>
+
+                        </div>
+                        </div>
+
+
+                        <div class="popup-holder hide">
+                            <div class="card">
+                                <div class="close-btn">
+                                    <span class="material-icons-sharp">
+                                        close
+                                    </span>
+                                </div>
+                                <h2>Activate Doctor</h2>
+                                <small class="text-muted">
+                                    This option allows you to to become a doctor.
+                                </small>
+                                <form action="#">
                             <div class="form-row">
                                 <label for="">INP</label>
-                                <input id="input-12" name="inp" class="primary" type="text" value="123456" readonly>
-                                <button type="button" id="edit-12" onclick="switching(12)">
+                                <input id="input-16" name="inp" class="primary" type="text" value="123456" readonly>
+                                <button type="button" id="edit-16" onclick="switching(16)">
                                     <h4 class="text-muted">Edit</h4>
-                            </div></button>
+                            </div>
+                            </button>
+
+                            <div class="form-row">
+                                <label for="">Speciality</label>
+                                <input id="input-17" name="city" class="primary" type="text" value="Generalist"
+                                    readonly>
+                                <button type="button" id="edit-17" onclick="switching(17)">
+                                    <h4 class="text-muted">Edit</h4>
+                                </button>
+                            </div>
 
                             <div class="form-row">
                                 <label for="">City</label>
-                                <input id="input-13" name="city" class="primary" type="text" value="Casablanca"
+                                <input id="input-18" name="city" class="primary" type="text" value="Casablanca"
                                     readonly>
-                                <button type="button" id="edit-13" onclick="switching(13)">
+                                <button type="button" id="edit-18" onclick="switching(18)">
                                     <h4 class="text-muted">Edit</h4>
                                 </button>
                             </div>
 
 
+                            <div class="form-row">
+                                <label for="">Adress</label>
+                                <input id="input-23" name="city" class="primary" type="text" value="Yakkine" readonly>
+                                <button type="button" id="edit-23" onclick="switching(23)">
+                                    <h4 class="text-muted">Edit</h4>
+                                </button>
+                            </div>
+
+                            <button>
+                                <div class="submit-btn-holder" type="submit">
+                                    <div class="submit-btn">
+                                        <span class="material-icons-sharp">
+                                            save
+                                        </span>
+                                        <h3>&#32;Save Changes</h3>
+                                    </div>
+                                </div>
+                            </button>
                         </form>
                     </div>
-
-
                 </div>
 
                 <div id="become-pharmacist" class="section-1">
                     <h2>Become a Pharmacist</h2>
                     <div class="rows privacy-settings">
+                        <div class="edit-button primary">
+                            <span onclick="" class="material-icons-sharp">
+                                edit
+                            </span>
+                        </div>
                         <div class="row">
                             <div class="description">
                                 <h3>Activate Pharmacien</h3>
@@ -314,33 +387,95 @@
                                 </small>
                             </div>
                             <label class="switch">
-                                <input id="become-pharmacist-btn" onclick="show_form(this.id)" name="" type="checkbox">
+                                <input id="become-pharmacist-btn" name="" type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </div>
-                        <form action="#" class="become-pharmacist-form hide-from">
+                        <div class="row status">
+                            <div class="label">
+                                <h3>Status</h3>
+                            </div>
+                            <div class="warning">
+                                <span class="material-icons-sharp"> watch_later</span>
+                                <h3>Pending</h3>
+                                </d>
+                            </div>
+                        </div>
+
+                        <div class="row status">
+                            <div class="label">
+                                <h3>Status</h3>
+                            </div>
+                            <div class="success">
+                                <span class="material-icons-sharp"> done</span>
+                                <h3>Active</h3>
+                                </d>
+                            </div>
+                        </div>
+
+                        </div>
+                        </div>
+
+                        <div class="popup-holder hide">
+                            <div class="card">
+                                <div class="close-btn">
+                                    <span class="material-icons-sharp">
+                                        close
+                                    </span>
+                                </div>
+                                <h2>Activate Pharmacist</h2>
+                                <small class="text-muted">
+                                    This option allows you to to become a doctor.
+                                </small>
+                                <form action="#">
                             <div class="form-row">
                                 <label for="">INP</label>
-                                <input id="input-14" name="inp" class="primary" type="text" value="123456" readonly>
-                                <button type="button" id="edit-14" onclick="switching(14)">
+                                <input id="input-19" name="inp" class="primary" type="text" value="123456" readonly>
+                                <button type="button" id="edit-19" onclick="switching(19)">
                                     <h4 class="text-muted">Edit</h4>
                             </div></button>
 
                             <div class="form-row">
                                 <label for="">City</label>
-                                <input id="input-15" name="city" class="primary" type="text" value="Casablanca"
+                                <input id="input-20" name="city" class="primary" type="text" value="Casablanca"
                                     readonly>
-                                <button type="button" id="edit-15" onclick="switching(15)">
+                                <button type="button" id="edit-20" onclick="switching(20)">
+                                    <h4 class="text-muted">Edit</h4>
+                                </button>
+                                </div>
+
+                                <div class="form-row">
+                                    <label for="">Name</label>
+                                    <input id="input-21" name="city" class="primary" type="text" value="Yakkine"
+                                        readonly>
+                                    <button type="button" id="edit-21" onclick="switching(21)">
                                     <h4 class="text-muted">Edit</h4>
                                 </button>
                             </div>
 
+                            <div class="form-row">
+                                <label for="">Adress</label>
+                                <input id="input-22" name="city" class="primary" type="text" value="Yakkine" readonly>
+                                <button type="button" id="edit-22" onclick="switching(22)">
+                                    <h4 class="text-muted">Edit</h4>
+                                </button>
+                            </div>
+
+                            <button>
+                                <div class="submit-btn-holder" type="submit">
+                                    <div class="submit-btn">
+                                        <span class="material-icons-sharp">
+                                            save
+                                        </span>
+                                        <h3>&#32;Save Changes</h3>
+                                    </div>
+                                </div>
+                            </button>
+
 
                         </form>
-                    </div>
-                </div>
-
-
+                        </div>
+                        </div>
                 <div class="submit-btn-holder" type="submit">
                     <div class="submit-btn">
                         <span class="material-icons-sharp">
@@ -355,6 +490,7 @@
 
 
         <script src="../script/script.js"></script>
+        <script src="../script/pop-up.js"></script>
     </body>
 
 </html>

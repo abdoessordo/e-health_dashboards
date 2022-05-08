@@ -10,6 +10,7 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     sideMenu.style.display = 'none';
 })
+
 try {
 
     document.querySelector(".popup-holder .card .close-btn span").addEventListener("click", () => {
@@ -114,25 +115,7 @@ const add_row = (type) => {
     let form_holder = document.querySelector(`#form-${type}>.rows`);
     form_holder.appendChild(new_row)
 }
-// show forms
-const show_form = (id) => {
-    switch (id) {
-        case "insrurance-btn":
-            document.querySelector("main .section-1 .rows.privacy-settings form").classList.toggle("hide-from")
-            break;
 
-        case "become-doctor-btn":
-            document.querySelector(".rigth .section-1 .rows.privacy-settings form.become-doctor-form").classList.toggle("hide-from")
-            break
-
-        case "become-pharmacist-btn":
-            document.querySelector(".rigth .section-1 .rows.privacy-settings form.become-pharmacist-form").classList.toggle("hide-from")
-            break
-
-        default:
-            break;
-    }
-}
 
 // Editing
 const switching = (i) => {
