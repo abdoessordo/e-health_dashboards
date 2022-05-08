@@ -24,7 +24,7 @@ try {
     document.querySelector("#add-note").addEventListener("click", () => {
         document.querySelector(".popup-holder").classList.remove("hide")
     })
-    // show sidebar
+
 
 
 } catch (error) {

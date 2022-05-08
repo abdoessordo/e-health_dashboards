@@ -1113,6 +1113,56 @@ main table#insurances tbody td:first-child > span{
 
 
 /* ====================================================
+====================== SECTION-1 ======================
+======================================================= */
+.section-1,
+.section-1 {
+    margin-top: 1rem;
+}
+
+
+
+.section-1 h2,
+.rigth .section-3 h2 {
+    margin-bottom: 0.8rem;
+}
+
+.section-1 .rows,
+.rigth .section-3 .rows {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.section-1 .rows:hover,
+.rigth .section-3 .rows:hover {
+    box-shadow: none;
+}
+
+.rows .row,
+.rigth .section-3 .rows .row,
+.rigth .section-2 .item {
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rigth .section-3 .rows .row {
+    grid-template-columns: 2.6rem auto 2.6rem;
+}
+
+.rigth .section-3 .rows .row span {
+    text-align: center;
+    vertical-align: middle;
+    transform: translateY(15%);
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+/* ====================================================
 ==================== SECTION-2 ========================
 ======================================================= */
 
