@@ -1339,7 +1339,7 @@ main table tbody tr:last-child td {
     }
 
     .rigth #become-doctor {
-        margin-top: -3rem;
+        margin-top: -3rem !important;
     }
 
     .drop-down-content {

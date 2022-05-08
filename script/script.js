@@ -11,10 +11,14 @@ closeBtn.addEventListener('click', () => {
     sideMenu.style.display = 'none';
 })
 
-try {
+console.log(document.querySelectorAll(".popup-holder .card .close-btn span"));
 
-    document.querySelector(".popup-holder .card .close-btn span").addEventListener("click", () => {
-        document.querySelector(".popup-holder").classList.add("hide")
+try {
+    const all_clsoe_btns = Array.from(document.querySelectorAll(".popup-holder .card .close-btn span"))
+    all_clsoe_btns.forEach(close => {
+        close.addEventListener("click", () => {
+            document.querySelectorAll(".popup-holder")[all_clsoe_btns.indexOf(close)].classList.add("hide")
+        })
     })
 
     document.querySelector("#add-note").addEventListener("click", () => {
@@ -168,5 +172,3 @@ try {
 } catch (error) {
 
 }
-
-

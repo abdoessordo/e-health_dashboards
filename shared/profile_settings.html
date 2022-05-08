@@ -267,7 +267,7 @@
                 <div id="become-doctor" class="section-1">
                     <h2>Become a Doctor</h2>
                     <div class="rows privacy-settings">
-                        <div class="edit-button primary">
+                        <div class="edit-button primary" type="doctor" onclick="show_popup(this)">
                             <span class="material-icons-sharp">
                                 edit
                             </span>
@@ -306,22 +306,22 @@
                             </div>
                         </div>
 
-                        </div>
-                        </div>
+                    </div>
+                </div>
 
 
-                        <div class="popup-holder hide">
-                            <div class="card">
-                                <div class="close-btn">
-                                    <span class="material-icons-sharp">
-                                        close
-                                    </span>
-                                </div>
-                                <h2>Activate Doctor</h2>
-                                <small class="text-muted">
-                                    This option allows you to to become a doctor.
-                                </small>
-                                <form action="#">
+                <div class="popup-holder doctor hide">
+                    <div class="card">
+                        <div class="close-btn">
+                            <span class="material-icons-sharp">
+                                close
+                            </span>
+                        </div>
+                        <h2>Activate Doctor</h2>
+                        <small class="text-muted">
+                            This option allows you to to become a doctor.
+                        </small>
+                        <form action="#">
                             <div class="form-row">
                                 <label for="">INP</label>
                                 <input id="input-16" name="inp" class="primary" type="text" value="123456" readonly>
@@ -375,7 +375,7 @@
                     <h2>Become a Pharmacist</h2>
                     <div class="rows privacy-settings">
                         <div class="edit-button primary">
-                            <span onclick="" class="material-icons-sharp">
+                            <span onclick="show_popup(this)" type="pharmacy" class="material-icons-sharp">
                                 edit
                             </span>
                         </div>
@@ -413,21 +413,21 @@
                             </div>
                         </div>
 
-                        </div>
-                        </div>
+                    </div>
+                </div>
 
-                        <div class="popup-holder hide">
-                            <div class="card">
-                                <div class="close-btn">
-                                    <span class="material-icons-sharp">
-                                        close
-                                    </span>
-                                </div>
-                                <h2>Activate Pharmacist</h2>
-                                <small class="text-muted">
-                                    This option allows you to to become a doctor.
-                                </small>
-                                <form action="#">
+                <div class="popup-holder pharmacy hide">
+                    <div class="card">
+                        <div class="close-btn">
+                            <span class="material-icons-sharp">
+                                close
+                            </span>
+                        </div>
+                        <h2>Activate Pharmacist</h2>
+                        <small class="text-muted">
+                            This option allows you to to become a doctor.
+                        </small>
+                        <form action="#">
                             <div class="form-row">
                                 <label for="">INP</label>
                                 <input id="input-19" name="inp" class="primary" type="text" value="123456" readonly>
@@ -442,13 +442,12 @@
                                 <button type="button" id="edit-20" onclick="switching(20)">
                                     <h4 class="text-muted">Edit</h4>
                                 </button>
-                                </div>
+                            </div>
 
-                                <div class="form-row">
-                                    <label for="">Name</label>
-                                    <input id="input-21" name="city" class="primary" type="text" value="Yakkine"
-                                        readonly>
-                                    <button type="button" id="edit-21" onclick="switching(21)">
+                            <div class="form-row">
+                                <label for="">Name</label>
+                                <input id="input-21" name="city" class="primary" type="text" value="Yakkine" readonly>
+                                <button type="button" id="edit-21" onclick="switching(21)">
                                     <h4 class="text-muted">Edit</h4>
                                 </button>
                             </div>
@@ -474,8 +473,8 @@
 
 
                         </form>
-                        </div>
-                        </div>
+                    </div>
+                </div>
                 <div class="submit-btn-holder" type="submit">
                     <div class="submit-btn">
                         <span class="material-icons-sharp">
