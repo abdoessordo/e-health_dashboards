@@ -1580,6 +1580,216 @@ h3.create-insurance-instructions {
 }
 
 /* ====================================================
+======================== CHAT ========================
+======================================================= */
+
+.messages-container {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 2rem;
+}
+
+.messages-container .card {
+    padding: 0;
+}
+
+.recent-messages .header {
+    border-bottom: 1px solid var(--color-light);
+    padding: var(--card-padding);
+    height: 6rem;
+}
+
+.recent-messages .header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-messages .header-content .new-conv {
+    display: flex;
+    align-items: center;
+}
+
+.recent-messages-body {
+    padding-bottom: var(--card-padding);
+}
+
+.recent-messages-body .search-chat {
+    height: 2rem;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    border: 1px solid var(--color-light);
+    margin-top: var(--card-padding);
+}
+
+.recent-messages-body .search-chat form {
+    overflow-y: hidden;
+}
+
+.recent-messages-body .search-chat .search-bar {
+    position: relative;
+}
+
+.recent-messages-body .search-chat .search-bar>span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.recent-messages-body .all-chats {
+    margin-top: var(--card-padding);
+    padding-top: 0;
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+.recent-messages-body .all-chats .chat-row {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--color-light);
+    padding: calc(0.5 * var(--card-padding));
+    transition: all 300ms ease;
+}
+
+.recent-messages-body .all-chats .chat-row:hover {
+    background-color: rgba(0, 0, 125, 0.1);
+}
+
+.recent-messages-body .all-chats .chat-row:last-child {
+    margin-bottom: 0rem;
+}
+
+.recent-messages-body .all-chats .chat-row .chat-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.recent-messages-body .all-chats .chat-row .chat-time .messages-count {
+    background-color: var(--color-success);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.conversation {
+    display: flex;
+    flex-direction: column;
+}
+
+.conversation .chat-header {
+    display: grid;
+    grid-template-columns: 10% auto 25%;
+    align-items: center;
+    padding-inline: var(--card-padding);
+    height: 6rem;
+    border-bottom: 1px solid var(--color-light);
+}
+
+.conversation .chat-header .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conversation .chat-header .profile >span {
+    display: none;
+}
+
+.conversation .chat-header .profile-photo {
+    height: 4rem;
+    width: 4rem;
+}
+
+.conversation .chat-header .chat-params {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.conversation .chat-header .chat-params>span {
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+.conversation .conversation-body {
+    padding: var(--card-padding);
+    max-height: 45rem;
+    overflow-y: auto;
+}
+
+.conversation .chat-box {
+    max-width: 30rem;
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+    border-top-left-radius: 0px;
+    background-color: #a2aaf528;
+}
+
+.conversation .chat-box:first-child {
+    margin-top: 0;
+}
+
+.conversation .chat-box.outgoing {
+    margin-left: auto;
+    text-align: right;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0.9rem;
+    background-color: #7380ec50;
+}
+
+/* 
+<div class="chat-box">
+<div class="incoming">
+    <div class="detail"> */
+
+
+.conversation .chat-input-container {
+    height: 6rem;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--color-light);
+    padding-inline: var(--card-padding);
+}
+
+
+
+
+
+.conversation .chat-input-container .message-input {
+    width: 100%;
+}
+
+.conversation .chat-input-container .buttons {
+    display: flex;
+}
+
+
+.conversation .chat-input-container .buttons div:last-child {
+    padding-left: 2rem;
+}
+
+.conversation .chat-input-container .buttons div>span {
+    cursor: pointer;
+}
+
+.conversation .chat-input-container .buttons .attach-file>span {
+    transform: rotate(45deg);
+}
+
+/* ====================================================
 ==================== MEDIA QUERIES ====================
 ======================================================= */
 
@@ -1598,7 +1808,19 @@ h3.create-insurance-instructions {
     .booking-dashboard {
         grid-template-columns: 50% 50%;
     }
-}
+    .messages-container {
+        grid-template-columns: 40% auto;
+    }
+
+    .conversation .chat-header .contact-details {
+        margin-left: 2rem;
+    }
+
+    .messages-container {
+        position: absolute;
+        width: 80%;
+    }
+    }
 
 @media screen and (max-width:1200px) {
     .container {
@@ -1910,4 +2132,45 @@ h3.create-insurance-instructions {
         float: unset;
     }
 
+    .messages-container {
+        display: block;
+        position: relative;
+        width: unset;
+    }
+
+    .conversation .chat-header {
+        grid-template-columns: 25% auto 25%;
+    }
+
+    main.messages {
+        margin-top: 5rem;
+    }
+
+    main.messages h1 {
+        display: none;
+    }
+
+    .conversation .chat-input-containe,
+    .conversation .chat-header {
+        height: 5rem;
+    }
+
+    body.messages {
+        /* overflow: hidden */
+    }
+
+    .recent-messages-body .all-chats {
+        max-height: 52vh;
+    }
+    .conversation .conversation-body{
+        max-height: 30rem;
+    }
+
+    .conversation .chat-header .chat-params>span{
+        padding-left: 1rem;
+    }
+
+    .conversation .chat-header .profile >span {
+        display: unset;
+    }
 }
